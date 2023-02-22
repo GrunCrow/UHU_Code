@@ -1,0 +1,87 @@
+desc ei.asignatura;
+desc ei.profesor;
+
+
+/*obtener nombre de las asignaturas junto nombre de profesor responsable*/
+SELECT *
+FROM ei.asignatura asig INNER JOIN ei.profesor prof
+ON asig.prof=prof.npr;
+
+/*EI-9. Obtener los números de los alumnos que se han matriculado en Bases de Datos I en el curso 2002-03*/
+desc EI.ASIGNATURA
+desc EI.MATRICULA;
+
+SELECT alum
+FROM ei.matricula M INNER JOIN EI.ASIGNATURA B USING(idAsig)
+WHERE B.nombre='Base de Datos I' AND M.AÑO=2002;
+
+/*EI-10. Obtener los nombres de los alumnos que han aprobado la asignatura
+Algoritmos y Estructuras de Datos I en la convocatoria de febrero_junio de 2001*/
+DESC EI.ALUMNO
+DESC EI.MATRICULA
+DESC EI.ASIGNATURA;
+
+SELECT ALUM.nombre
+FROM(EI.ASIGNATURA ASIG INNER JOIN EI.MATRICULA MAT USING(idAsig))
+    INNER JOIN EI.ALUMNO ALUM ON MAT.alum=ALUM.nAl
+WHERE ASIG.nombre='Algoritmos y Estructuras de Datos I'
+      AND MAT.año=2001
+      AND MAT.feb_jun>=5;
+      
+/*EI-11. Obtener un listado con el número de despacho, pero sólo de aquellos donde hay al menos 2 profesores */  
+SELECT distinct despacho /*Para eliminar repeticiones de despachos*/
+FROM EI.PROFESOR P1 INNER JOIN EI.PROFESOR P2 USING(despacho)
+WHERE p1.nombre<>p2.nombre
+ORDER BY despacho;
+
+/*EI-12. Obtener una lista con todas las asignaturas de las que es responsable o docente la profesora Dolores Toscano Barriga*/
+SELECT asig.nombre as Asignatura
+FROM EI.ASIGNATURA ASIG INNER JOIN EI.PROFESOR PROF ON ASIG.PROF=PROF.NPR
+WHERE PROF.NOMBRE='Dolores Toscano Barriga'
+union
+SELECT asig.nombre as Asignatura
+FROM (EI.ASIGNATURA ASIG INNER JOIN EI.MATRICULA MAT USING(idasig))
+      INNER JOIN EI.PROFESOR PROF ON asig.prof=prof.npr
+WHERE PROF.NOMBRE='Dolores Toscano Barriga';
+
+/*MF-5. Mostrar el código y coste de las tarifas junto con el nombre de la compañía que las ofrecen,
+de aquellas tarifas cuya descripción indique que otras personas deben estar también en la misma compañía*/
+SELECT * FROM MF.TARIFA;
+/*observamos que en la descripcion, cuando se comparte tarifa con alguien aparece la palabra compania al final (%compania)*/
+SELECT TAR.TARIFA,TAR.COSTE,CIA.NOMBRE
+FROM MF.COMPAÑIA CIA INNER JOIN MF.TARIFA TAR ON CIA.CIF=TAR.COMPAÑIA
+WHERE TAR.DESCRIPCION LIKE '%compañía%';
+
+/*MF-6. Nombre y número de teléfonos de aquellos abonados con contrato que tienen tarifas inferiores a 0,20 €*/
+SELECT TEL.NUMERO,CLTE.NOMBRE,TEL.TIPO,TAR.COSTE
+FROM(MF.CLIENTE CLTE INNER JOIN MF.TELEFONO TEL ON CLTE.DNI=TEL.CLIENTE)
+    INNER JOIN MF.TARIFA TAR USING(TARIFA,COMPAÑIA)
+WHERE TEL.TIPO='C' AND TAR.COSTE<0.2;
+
+/*MF-7. Obtener el código de las tarifas, el nombre de las compañías, los números de teléfono y los puntos,
+de aquellos teléfonos que se contrataron en el año 2006 y que hayan obtenido más de 200 puntos.*/
+SELECT TARIFA, CIA.NOMBRE, TEL.NUMERO, TEL.PUNTOS, TEL.F_CONTRATO, EXTRACT(YEAR FROM TEL.F_CONTRATO)
+FROM (MF.COMPAÑIA CIA INNER JOIN MF.TARIFA TAR ON CIA.CIF=TAR.COMPAÑIA)
+  INNER JOIN MF.TELEFONO TEL USING(TARIFA,COMPAÑIA)
+WHERE EXTRACT(YEAR FROM TEL.F_CONTRATO)=2006 AND TEL.PUNTOS>200;
+      
+/*MF-8. Obtener los números de teléfono (origen y destino), así como el tipo de contrato,
+de los clientes que alguna vez hablaron por teléfono entre las 8 y las 10 de la mañana*/
+select ll.tf_origen, ll.tf_destino,to_char(ll.fecha_hora,'hh:mm') Hora
+from MF.LLAMADA LL
+ORDER BY TO_CHAR(LL.FECHA_HORA,'hh:mm');
+
+SELECT LLAM.TF_ORIGEN, LLAM.TF_DESTINO, TELORI.NUMERO, TELORI.TARIFA, LLAM.tf_origen, to_char(LLAM.FECHA_HORA,'hh:mm') Hora
+FROM (MF.LLAMADA LLAM INNER JOIN MF.TELEFONO TELORI ON TELORI.NUMERO=LLAM.TF_ORIGEN)
+      INNER JOIN MF.TELEFONO TELEDES ON TELEDES.NUMERO=LLAM.TF_DESTINO
+WHERE TO_CHAR(LLAM.FECHA_HORA,'hh:mm')<='10:00'
+      AND TO_CHAR(LLAM.FECHA_HORA,'hh:mm')>='08:00'
+ORDER BY HORA;
+
+/*MF-9. Interesa conocer los nombres y números de teléfono de los clientes (origen y destino) que, perteneciendo a  
+compañías distintas, mantuvieron llamadas que superaron los 15 minutos. Se desea conocer, también, la fecha y la 
+hora de dichas llamadas así como la duración de esas llamadas*/
+
+/*select telorg.numero TLFORIGEN, cltorg.nombre CLTEORG, TELDEAT.NUMERO TLFDEST, CLTEDEST.NOMBRE CLTEDEST, LL.DURACION
+FROM ((MF.CLIENTE CLTEORG INNER JOIN MF.TELEFONO TELORG ON CLTEORG.DNI=TELORG.CLIENTE)*/
+      
