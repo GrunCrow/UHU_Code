@@ -1,0 +1,96 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 2.0960625 
+tiers? <exists> 
+size = 2 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "fonos" 
+        xmin = 0 
+        xmax = 2.0960625 
+        intervals: size = 8 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.23588048533454054 
+            text = "#" 
+        intervals [2]:
+            xmin = 0.23588048533454054 
+            xmax = 0.5203061462141663 
+            text = "a" 
+        intervals [3]:
+            xmin = 0.5203061462141663 
+            xmax = 0.8968315449024328 
+            text = "#" 
+        intervals [4]:
+            xmin = 0.8968315449024328 
+            xmax = 1.2327247063221813 
+            text = "i" 
+        intervals [5]:
+            xmin = 1.2327247063221813 
+            xmax = 1.5566179283011028 
+            text = "#" 
+        intervals [6]:
+            xmin = 1.5566179283011028 
+            xmax = 1.6901160517111211 
+            text = "a" 
+        intervals [7]:
+            xmin = 1.6901160517111211 
+            xmax = 1.8388228220919007 
+            text = "i" 
+        intervals [8]:
+            xmin = 1.8388228220919007 
+            xmax = 2.0960625 
+            text = "#" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "difonos" 
+        xmin = 0 
+        xmax = 2.0960625 
+        intervals: size = 11 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.17899535315861537 
+            text = "#" 
+        intervals [2]:
+            xmin = 0.17899535315861537 
+            xmax = 0.3780933157743534 
+            text = "-a" 
+        intervals [3]:
+            xmin = 0.3780933157743534 
+            xmax = 0.578545686299042 
+            text = "a-" 
+        intervals [4]:
+            xmin = 0.578545686299042 
+            xmax = 0.8587100173094888 
+            text = "#" 
+        intervals [5]:
+            xmin = 0.8587100173094888 
+            xmax = 1.0445934802854635 
+            text = "-i" 
+        intervals [6]:
+            xmin = 1.0445934802854635 
+            xmax = 1.276102884173723 
+            text = "i-" 
+        intervals [7]:
+            xmin = 1.276102884173723 
+            xmax = 1.478884843783877 
+            text = "#" 
+        intervals [8]:
+            xmin = 1.478884843783877 
+            xmax = 1.6343510128183287 
+            text = "-a" 
+        intervals [9]:
+            xmin = 1.6343510128183287 
+            xmax = 1.7644694369015108 
+            text = "ai" 
+        intervals [10]:
+            xmin = 1.7644694369015108 
+            xmax = 1.933454403243306 
+            text = "i-" 
+        intervals [11]:
+            xmin = 1.933454403243306 
+            xmax = 2.0960625 
+            text = "#" 

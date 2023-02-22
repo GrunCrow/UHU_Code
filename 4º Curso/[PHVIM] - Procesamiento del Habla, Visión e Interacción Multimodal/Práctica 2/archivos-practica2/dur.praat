@@ -1,0 +1,1 @@
+praat duration.praat lamparita.wav
