@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1575325670 source:c:\users\alba\desktop\programas\tesoro\tesoro\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+

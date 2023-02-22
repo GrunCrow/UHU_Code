@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1575375896 source:c:\users\usuario\desktop\prueba\prueba\main.cpp
+	<iostream>
+	<iomanip>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<conio.h>
+
