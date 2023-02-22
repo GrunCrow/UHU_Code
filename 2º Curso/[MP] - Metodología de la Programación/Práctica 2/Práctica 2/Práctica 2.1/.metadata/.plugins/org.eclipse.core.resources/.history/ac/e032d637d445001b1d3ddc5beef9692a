@@ -1,0 +1,33 @@
+package libClases;
+
+public class ClienteMovil extends Cliente {
+	private Fecha fechaPermanencia;
+    private float minutosHablados;
+    private float precioMinuto;
+
+	public ClienteMovil(String NIF, String nom, Fecha fNac, Fecha fAlta, Fecha fPermanencia, float minutosHablados, float precioMinuto) {
+	    super(NIF, nom, fNac, fAlta); //constructor de Cliente
+	    this.minutosHablados = minutosHablados;
+	    this.precioMinuto = precioMinuto;
+	    this.fechaPermanencia = (Fecha)fPermanencia.clone();
+	}
+	
+	public ClienteMovil(String NIF, String nom, Fecha fNac, Fecha fAlta, float minutosHablados, float precioMinuto) {
+	    this(NIF, nom, fNac, fAlta, new Fecha(fAlta.getDia(), fAlta.getMes(), fAlta.getAnio()+1), minutosHablados, precioMinuto);
+	}
+	
+	public ClienteMovil(String NIF, String nom, Fecha fNac, float minutosHablados, float precioMinuto) {
+	    this(NIF, nom, fNac, getFechaPorDefecto(), minutosHablados, precioMinuto);
+	}
+	
+	public void setFPermanencia(Fecha fechaper) {
+		this.fechaPermanencia = fechaper; //(Fecha)fechaper.clone();
+		
+	}
+	
+	public Fecha getFPermanencia() {
+		return this.fechaPermanencia;
+	}
+
+
+}

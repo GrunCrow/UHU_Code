@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\albam\OneDrive - UNIVERSIDAD DE HUELVA\Universidad\2º Curso\1º Cuatrimestre\Metodología de la Programación\Prácticas\Práctica 2\Práctica 2.1\.metadata\.plugins\org.eclipse.jdt.core
+3778655098.index
+1679873894.index

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SaveAsDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="429"/>
+		<item key="DIALOG_Y_ORIGIN" value="8"/>
+		<item key="DIALOG_WIDTH" value="759"/>
+		<item key="DIALOG_HEIGHT" value="580"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\albam\OneDrive - UNIVERSIDAD DE HUELVA\Universidad\2º Curso\1º Cuatrimestre\Metodología de la Programación\Prácticas\Práctica 2\Programa\Practica 2.2"/>
+			<item value="C:\Users\albam\OneDrive - UNIVERSIDAD DE HUELVA\Universidad\2º Curso\1º Cuatrimestre\Metodología de la Programación\Prácticas\Práctica 2\Práctica 2.1\Prueba final\Programa"/>
+			<item value="F:\UHU\Practica 2.2"/>
+			<item value="F:\UHU\MP\Practica2.2"/>
+			<item value="C:\Users\albam\OneDrive - UNIVERSIDAD DE HUELVA\Universidad\2º Curso\1º Cuatrimestre\Metodología de la Programación\Prácticas\Práctica 2\Programa"/>
+		</list>
+	</section>
+	<section name="ExternalProjectImportWizard">
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.ui.wizards.new.project"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.jdt.ui.java"/>
+		</list>
+	</section>
+	<section name="BasicNewProjectResourceWizard">
+	</section>
+</section>

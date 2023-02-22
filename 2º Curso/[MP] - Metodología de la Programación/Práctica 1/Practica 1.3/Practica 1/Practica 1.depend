@@ -1,0 +1,218 @@
+# depslib dependency file v1.0
+1604851540 source:c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\1º cuatrimestre\metodología de la programación\prácticas\práctica 1\practica 1.1\practica 1\main.cpp
+	<cstdlib>
+	<iostream>
+	"Fecha.h"
+	"Cliente.h"
+
+1604851816 source:c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\1º cuatrimestre\metodología de la programación\prácticas\práctica 1\practica 1.1\practica 1\src\cliente.cpp
+	"Cliente.h"
+	<cstring>
+	"Fecha.h"
+
+1604852310 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\1º cuatrimestre\metodología de la programación\prácticas\práctica 1\practica 1.1\practica 1\include\cliente.h
+	<Fecha.h>
+	<cstdlib>
+	<iomanip>
+	<sstream>
+
+1604850014 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\1º cuatrimestre\metodología de la programación\prácticas\práctica 1\practica 1.1\practica 1\include\fecha.h
+	"iostream"
+	<cstdlib>
+	<iomanip>
+	<sstream>
+	<cstring>
+
+1604849900 source:c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\1º cuatrimestre\metodología de la programación\prácticas\práctica 1\practica 1.1\practica 1\src\fecha.cpp
+	"Fecha.h"
+	"iostream"
+
+1604915307 source:c:\users\usuario\desktop\practica 1.2\practica 1\main.cpp
+	<iostream>
+	"Fecha.h"
+	"Cliente.h"
+	<cstdlib>
+	<iostream>
+	<iomanip>
+	"Fecha.h"
+	"Contrato.h"
+	"ContratoTP.h"
+	"ContratoMovil.h"
+
+1604915484 c:\users\usuario\desktop\practica 1.2\practica 1\include\fecha.h
+	"iostream"
+	<cstdlib>
+	<iomanip>
+	<sstream>
+	<cstring>
+
+1604907780 c:\users\usuario\desktop\practica 1.2\practica 1\include\cliente.h
+	<Fecha.h>
+	<cstdlib>
+	<iomanip>
+	<sstream>
+
+1604914589 source:c:\users\usuario\desktop\practica 1.2\practica 1\src\cliente.cpp
+	"Cliente.h"
+	<cstring>
+	"Fecha.h"
+
+1604915484 source:c:\users\usuario\desktop\practica 1.2\practica 1\src\fecha.cpp
+	"Fecha.h"
+	"iostream"
+
+1604917219 source:c:\users\usuario\desktop\practica 1.2\practica 1\src\contratomovil.cpp
+	"ContratoMovil.h"
+
+1604917492 c:\users\usuario\desktop\practica 1.2\practica 1\include\contratomovil.h
+	"Contrato.h"
+
+1604917303 source:c:\users\usuario\desktop\practica 1.2\practica 1\src\contratotp.cpp
+	"ContratoTP.h"
+
+1604917303 c:\users\usuario\desktop\practica 1.2\practica 1\include\contratotp.h
+	"Contrato.h"
+
+1604917397 c:\users\usuario\desktop\practica 1.2\practica 1\include\contrato.h
+	"Fecha.h"
+
+1604917397 source:c:\users\usuario\desktop\practica 1.2\practica 1\src\contrato.cpp
+	"Contrato.h"
+
+1605115900 source:c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\1º cuatrimestre\metodología de la programación\prácticas\práctica 1\practica 1.2\practica 1\main.cpp
+	<iostream>
+	"Fecha.h"
+	"Cliente.h"
+	<cstdlib>
+	<iostream>
+	<iomanip>
+	"Fecha.h"
+	"Contrato.h"
+	"ContratoTP.h"
+	"ContratoMovil.h"
+
+1604917626 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\1º cuatrimestre\metodología de la programación\prácticas\práctica 1\practica 1.2\practica 1\include\fecha.h
+	"iostream"
+	<cstdlib>
+	<iomanip>
+	<sstream>
+	<cstring>
+
+1604917625 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\1º cuatrimestre\metodología de la programación\prácticas\práctica 1\practica 1.2\practica 1\include\cliente.h
+	<Fecha.h>
+	<cstdlib>
+	<iomanip>
+	<sstream>
+
+1605113270 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\1º cuatrimestre\metodología de la programación\prácticas\práctica 1\practica 1.2\practica 1\include\contrato.h
+	"Fecha.h"
+
+1605115963 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\1º cuatrimestre\metodología de la programación\prácticas\práctica 1\practica 1.2\practica 1\include\contratotp.h
+	"Contrato.h"
+	"Fecha.h"
+	<iostream>
+
+1605115057 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\1º cuatrimestre\metodología de la programación\prácticas\práctica 1\practica 1.2\practica 1\include\contratomovil.h
+	"Contrato.h"
+
+1604917648 source:c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\1º cuatrimestre\metodología de la programación\prácticas\práctica 1\practica 1.2\practica 1\src\cliente.cpp
+	"Cliente.h"
+	<cstring>
+	"Fecha.h"
+
+1605115684 source:c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\1º cuatrimestre\metodología de la programación\prácticas\práctica 1\practica 1.2\practica 1\src\contratomovil.cpp
+	"ContratoMovil.h"
+	"Contrato.h"
+	<cstring>
+	<iomanip>
+	<iostream>
+	<cstdlib>
+
+1604917648 source:c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\1º cuatrimestre\metodología de la programación\prácticas\práctica 1\practica 1.2\practica 1\src\fecha.cpp
+	"Fecha.h"
+	"iostream"
+
+1605116002 source:c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\1º cuatrimestre\metodología de la programación\prácticas\práctica 1\practica 1.2\practica 1\src\contratotp.cpp
+	"ContratoTP.h"
+
+1605113270 source:c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\1º cuatrimestre\metodología de la programación\prácticas\práctica 1\practica 1.2\practica 1\src\contrato.cpp
+	"Contrato.h"
+	<iostream>
+
+1606138616 source:c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\1º cuatrimestre\metodología de la programación\prácticas\práctica 1\practica 1.3\practica 1\src\cliente.cpp
+	"Cliente.h"
+	<cstring>
+	"Fecha.h"
+
+1604917625 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\1º cuatrimestre\metodología de la programación\prácticas\práctica 1\practica 1.3\practica 1\include\cliente.h
+	<Fecha.h>
+	<cstdlib>
+	<iomanip>
+	<sstream>
+
+1604917626 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\1º cuatrimestre\metodología de la programación\prácticas\práctica 1\practica 1.3\practica 1\include\fecha.h
+	"iostream"
+	<cstdlib>
+	<iomanip>
+	<sstream>
+	<cstring>
+
+1606232217 source:c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\1º cuatrimestre\metodología de la programación\prácticas\práctica 1\practica 1.3\practica 1\src\contrato.cpp
+	"Contrato.h"
+	<iostream>
+
+1606232217 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\1º cuatrimestre\metodología de la programación\prácticas\práctica 1\practica 1.3\practica 1\include\contrato.h
+	"Fecha.h"
+
+1606232458 source:c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\1º cuatrimestre\metodología de la programación\prácticas\práctica 1\practica 1.3\practica 1\src\contratomovil.cpp
+	"ContratoMovil.h"
+	"Contrato.h"
+	<cstring>
+	<iomanip>
+	<iostream>
+	<cstdlib>
+
+1605977945 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\1º cuatrimestre\metodología de la programación\prácticas\práctica 1\practica 1.3\practica 1\include\contratomovil.h
+	"Contrato.h"
+
+1606232503 source:c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\1º cuatrimestre\metodología de la programación\prácticas\práctica 1\practica 1.3\practica 1\src\contratotp.cpp
+	"ContratoTP.h"
+
+1605977956 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\1º cuatrimestre\metodología de la programación\prácticas\práctica 1\practica 1.3\practica 1\include\contratotp.h
+	"Contrato.h"
+	"Fecha.h"
+	<iostream>
+
+1604917648 source:c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\1º cuatrimestre\metodología de la programación\prácticas\práctica 1\practica 1.3\practica 1\src\fecha.cpp
+	"Fecha.h"
+	"iostream"
+
+1606235587 source:c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\1º cuatrimestre\metodología de la programación\prácticas\práctica 1\practica 1.3\practica 1\main.cpp
+	<iostream>
+	"Fecha.h"
+	"Cliente.h"
+	<cstdlib>
+	<iostream>
+	<iomanip>
+	"Fecha.h"
+	"Contrato.h"
+	"ContratoTP.h"
+	"ContratoMovil.h"
+	"Empresa.h"
+
+1606235539 source:c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\1º cuatrimestre\metodología de la programación\prácticas\práctica 1\practica 1.3\practica 1\src\empresa.cpp
+	"Empresa.h"
+	<cstdio>
+	"Fecha.h"
+	"Contrato.h"
+	"ContratoTP.h"
+	"ContratoMovil.h"
+	<typeinfo>
+
+1606234993 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\1º cuatrimestre\metodología de la programación\prácticas\práctica 1\practica 1.3\practica 1\include\empresa.h
+	"Fecha.h"
+	"Cliente.h"
+	"Contrato.h"
+	"ContratoTP.h"
+	"ContratoMovil.h"
+

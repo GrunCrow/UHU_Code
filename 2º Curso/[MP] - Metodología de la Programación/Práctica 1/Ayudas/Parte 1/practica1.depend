@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1514140574 source:c:\users\amarquez\downloads\practica1a\main.cpp
+	<iostream>
+
+1542139450 source:c:\users\amarquez\downloads\practica1a\src\cliente.cpp
+	<cstdlib>
+	<cstring>
+	<iomanip>
+	<sstream>
+	"Cliente.h"
+
+1542139384 c:\users\amarquez\downloads\practica1a\include\cliente.h
+	<iostream>
+	"Fecha.h"
+
+1542139819 c:\users\amarquez\downloads\practica1a\include\fecha.h
+	<iostream>
+
+1542115996 source:c:\users\amarquez\downloads\practica1a\src\fecha.cpp
+	"Fecha.h"
+

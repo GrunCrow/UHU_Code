@@ -1,0 +1,139 @@
+package libClases;
+
+import java.util.Scanner;
+
+public final class Fecha {
+	private int dia;
+	private int mes;
+	private int anio;
+
+	//CONSTRUCTORES
+	
+	public Fecha(int d, int m, int a) {
+		setFecha(d,m,a);
+	}
+	
+	public Fecha(Fecha f) {
+		setFecha(f.dia,f.mes,f.anio);
+	}
+	
+	
+	//SABER SI UN ANIO ES BISIESTO
+	public boolean bisiesto() {
+		boolean b=false;
+		
+		if (anio % 4 == 0) {
+			b=true;
+			if (anio%100 == 0 && anio%400 !=0 )
+				b=false;
+		}
+		return b;
+	}
+	
+	//PONER UNA FECHA
+	public void setFecha(int d, int m, int a) {
+		int maxDias[] = {31,28,31,30,31,30,31,31,30,31,30,31};
+		
+		this.dia = d;
+		this.mes = m;
+		this.anio = a;
+		
+		if(mes<1)
+			this.mes = 1;
+		else if(mes > 12)
+			this.mes = 12;
+		
+		if (bisiesto())
+			maxDias[2] = 29;
+		
+		if (d>maxDias[m-1]) //decremento porque si metemos mes = 3 -> sería marzo pero en la tabla sería abril
+			this.dia=maxDias[m-1];
+		else if (d<1)
+			this.dia=1;
+	}
+	
+	//DEVOLVER DIA, MES O ANIO:
+	
+	public int getDia() {
+		return this.dia;
+	}
+	
+	public int getMes() {
+		return this.mes;
+	}
+	
+	
+	public int getAnio() {
+		return this.anio;
+	}
+	
+	public static Fecha pedirFecha() {
+			Fecha fecha = null;
+			boolean valida = false;
+			
+			Scanner sc = new Scanner(System.in);
+			
+			int dia, mes, anio;
+			
+			do {
+				System.out.println("Introduce la Fecha (dd/mm/aaaa): ");
+				String cadena = sc.next();
+				String[] tokens = cadena.split("/");
+				
+				try {
+					if (tokens.length != 3)
+					throw new NumberFormatException();
+					dia = Integer.parseInt(tokens[0]); //parseInt lanza la excepcion
+					mes = Integer.parseInt(tokens[1]); //NumberFormatException si no
+					anio = Integer.parseInt(tokens[2]);//puede convertir el String a int
+					fecha = new Fecha(dia, mes, anio);
+					if (fecha.getDia() != dia || fecha.getMes() != mes)
+					throw new NumberFormatException();
+					valida=true;
+				} 
+				
+				catch(NumberFormatException e) {
+					System.out.println("Fecha no valida");
+				}
+			}while(!valida);
+			sc.close();
+			return fecha;
+	}
+	
+	static public boolean mayor(Fecha f1, Fecha f2) {
+		if (f1.anio*10000+f1.mes*100+f1.dia>f2.anio*10000+f2.mes*100+f2.dia)
+			return true;
+		else
+			return false;
+	}
+	
+	public void ver() {
+		System.out.println(this/*.toString()*/);
+	}
+	
+	public String toString() {
+		String s="";
+		if (dia<10) s=s+0;
+		s=s+dia+"/";
+		if (mes<10) s=s+0;
+		s=s+mes+"/"+anio;
+		return s;
+		//LO ANTERIOR SE PUEDE SUSTITUIR POR LO SIGUIENTE
+		//return String.format("%02d/%02d/%02d", dia, mes, anio);
+	}
+	
+	public static void main(String[] args) {
+		Fecha f1 = new Fecha(29,2,2001), f2 = new Fecha(f1), f3 = new Fecha(29,2,2004);
+		final Fecha f4=new Fecha(05,12,2003); //es constante la referencia f4
+		System.out.println("Fechas: " + f1.toString() + ", " + f2 + ", " + f3 + ", " + f4);
+		f1=new Fecha(31,12,2016); //31/12/2016
+		f4.setFecha(28, 2, 2008); //pero no es constante el objeto al que apunta
+		System.out.println(f1 +" "+ f2.toString() +" " + f3 + " "+ f4 + " "+ f1);
+		f1=new Fecha(f4.getDia()-10, f4.getMes(), f4.getAnio()-7); //f1=18/02/2001
+		f3=Fecha.pedirFecha(); // pide una fecha por teclado
+		if (f3.bisiesto() && Fecha.mayor(f2,f1))
+		System.out.println("El " + f3.getAnio() + " fue bisiesto, " + f1 + ", " + f3);
+		System.out.print("Fin\n");
+	}
+
+}

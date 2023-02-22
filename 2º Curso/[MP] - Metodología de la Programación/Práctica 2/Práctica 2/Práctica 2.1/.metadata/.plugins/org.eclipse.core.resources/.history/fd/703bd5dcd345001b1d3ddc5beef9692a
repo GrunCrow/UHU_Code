@@ -1,0 +1,97 @@
+package libClases;
+
+public class Cliente implements Cloneable, Proceso{
+	
+	private static int contador = 1;
+	
+	private final String nif; //final = const -> inmutable
+	private final int codCliente;
+	private String nombre;
+	private final Fecha fechaNac;
+	private final Fecha fechaAlta;
+	
+	private static final Fecha FechaDefecto = new Fecha(1,1,2018);
+			
+	//CONSTRUCTORES:
+	
+	public Cliente(String nif, String nom, Fecha fNac, Fecha fAlta) {
+		this.nif = nif;
+		this.nombre = nom;
+		this.fechaNac = (Fecha)fNac.clone();
+		this.fechaAlta = (Fecha)fAlta.clone();
+		this.codCliente = contador ++;
+	}
+	
+	public Cliente (String nif, String nom, Fecha fNac) {
+		Fecha fAlta = new Fecha(01,01,2018);
+		this.nif = nif;
+		this.nombre = nom;
+		this.fechaNac = (Fecha)fNac.clone();
+		this.fechaAlta = (Fecha)fAlta.clone();
+		this.codCliente = contador ++;
+	}
+
+	public Cliente(Cliente c1) {
+		this.nif = c1.nif;
+		this.nombre = c1.nombre;
+		this.fechaNac = (Fecha)c1.fechaNac.clone(); //si no ponemos clone hacemos que apunte a la misma fecha
+		this.fechaAlta = (Fecha)c1.fechaAlta.clone(); //y al mostrar si cambiamos esa fecha o la otra, cambia a lo q apunta (cambian ambas)
+		this.codCliente = contador++; //el cod no puede ser nunca igual
+	}
+	
+	
+	//getNombreAtributo( ) y setNombreAtributo( )
+	
+	//ATRIBUTO NIF:
+	public String getNIF( ){
+		return this.nif;
+	}
+	
+	//ATRIBUTO NOMBRE:
+	//getNombreAtributo( ) y setNombreAtributo( )
+	public String getNombre( ){
+		return this.nombre;
+	}
+	
+	public void setNombre(String nombre){
+		this.nombre=nombre;
+	}
+
+	public static Fecha getFechaPorDefecto() {
+		return (Fecha)FechaDefecto.clone();
+	}
+	
+	public static void setFechaPorDefecto(Fecha f) {
+		FechaDefecto.setFecha(f);
+	}
+	
+	@Override
+	public Object clone() {
+		return new Cliente(this);
+	}
+	
+	public Fecha getFechaNac() {
+		return (Fecha)fechaNac.clone();
+	}
+	
+	public Fecha getFechaAlta() {
+		return (Fecha)fechaAlta.clone();
+	}
+	
+	public void setFechaAlta(Fecha fAlta) {
+		fechaAlta.setFecha(fAlta);
+	}
+	
+	@Override
+	public void ver() {
+		System.out.println(this);
+	}
+	
+	@Override
+    public String toString(){ //fallo que me ha costado mucho ver -> para mostrar por pantalla se debe cnvertir en String
+        return nif+" "+fechaNac+": "+nombre+" ("+codCliente+" - "+fechaAlta+")";
+    }
+
+	
+
+}

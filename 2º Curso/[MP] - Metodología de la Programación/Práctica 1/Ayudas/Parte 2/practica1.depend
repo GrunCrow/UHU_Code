@@ -1,0 +1,168 @@
+# depslib dependency file v1.0
+1541496597 source:c:\users\usuario\downloads\practica1a\main.cpp
+	<iostream>
+	"Fecha.h"
+	"Cliente.h"
+	<cstring>
+
+1541496537 source:c:\users\usuario\downloads\practica1a\src\fecha.cpp
+	"Fecha.h"
+
+1540891983 c:\users\usuario\downloads\practica1a\include\fecha.h
+
+1541496870 c:\users\usuario\downloads\practica1a\include\cliente.h
+	<iostream>
+	"Fecha.h"
+
+1541496488 source:c:\users\usuario\downloads\practica1a\src\cliente.cpp
+	<iostream>
+	<stdlib.h>
+	<cstring>
+	"Cliente.h"
+
+1542104910 source:c:\users\usuario\downloads\practica1b\main.cpp
+	<iostream>
+	"Fecha.h"
+	"Cliente.h"
+	"Contrato.h"
+	"ContratoMovil.h"
+	<cstring>
+
+1540891983 c:\users\usuario\downloads\practica1b\include\fecha.h
+
+1542102585 c:\users\usuario\downloads\practica1b\include\cliente.h
+	<iostream>
+	"Fecha.h"
+
+1541496537 source:c:\users\usuario\downloads\practica1b\src\fecha.cpp
+	"Fecha.h"
+
+1542101516 source:c:\users\usuario\downloads\practica1b\src\cliente.cpp
+	<iostream>
+	<stdlib.h>
+	<cstring>
+	"Cliente.h"
+
+1542104571 source:c:\users\usuario\downloads\practica1b\src\contratomovil.cpp
+	<iostream>
+	<stdlib.h>
+	<cstring>
+	"Contrato.h"
+	"ContratoMovil.h"
+
+1542104603 c:\users\usuario\downloads\practica1b\include\contrato.h
+	<iostream>
+	"Fecha.h"
+
+1542105009 c:\users\usuario\downloads\practica1b\include\contratomovil.h
+	"Fecha.h"
+	"Contrato.h"
+
+1542104696 source:c:\users\usuario\downloads\practica1b\src\contrato.cpp
+	"Contrato.h"
+
+1542104718 source:c:\users\usuario\downloads\practica1b\src\contratotp.cpp
+	"ContratoTP.h"
+
+1542104571 c:\users\usuario\downloads\practica1b\include\contratotp.h
+	"Fecha.h"
+	"Contrato.h"
+
+1542104910 source:c:\users\amarquez\downloads\practica1bmartes13\main.cpp
+	<iostream>
+	"Fecha.h"
+	"Cliente.h"
+	"Contrato.h"
+	"ContratoMovil.h"
+	<cstring>
+
+1542141244 c:\users\amarquez\downloads\practica1bmartes13\include\fecha.h
+	<iostream>
+
+1542142970 c:\users\amarquez\downloads\practica1bmartes13\include\cliente.h
+	<iostream>
+	"Fecha.h"
+
+1542141375 c:\users\amarquez\downloads\practica1bmartes13\include\contrato.h
+	<iostream>
+	"Fecha.h"
+
+1542142970 c:\users\amarquez\downloads\practica1bmartes13\include\contratomovil.h
+	<iostream>
+	"Fecha.h"
+	"Contrato.h"
+
+1542141806 source:c:\users\amarquez\downloads\practica1bmartes13\src\cliente.cpp
+	<cstdlib>
+	<cstring>
+	<iomanip>
+	<sstream>
+	"Cliente.h"
+
+1542142970 source:c:\users\amarquez\downloads\practica1bmartes13\src\contrato.cpp
+	"Contrato.h"
+
+1542143540 source:c:\users\amarquez\downloads\practica1bmartes13\src\contratotp.cpp
+	"ContratoTP.h"
+
+1542144389 c:\users\amarquez\downloads\practica1bmartes13\include\contratotp.h
+	<iostream>
+	"Fecha.h"
+	"Contrato.h"
+
+1542141129 source:c:\users\amarquez\downloads\practica1bmartes13\src\fecha.cpp
+	"Fecha.h"
+
+1542104910 source:c:\users\amarquez\downloads\practica1b_ayuda_2020\main.cpp
+	<iostream>
+	"Fecha.h"
+	"Cliente.h"
+	"Contrato.h"
+	"ContratoMovil.h"
+	<cstring>
+
+1605099516 c:\users\amarquez\downloads\practica1b_ayuda_2020\include\fecha.h
+	<iostream>
+
+1604494689 c:\users\amarquez\downloads\practica1b_ayuda_2020\include\cliente.h
+	<iostream>
+	"Fecha.h"
+
+1542148747 c:\users\amarquez\downloads\practica1b_ayuda_2020\include\contrato.h
+	<iostream>
+	"Fecha.h"
+
+1542148701 c:\users\amarquez\downloads\practica1b_ayuda_2020\include\contratomovil.h
+	<iostream>
+	"Fecha.h"
+	"Contrato.h"
+
+1542141806 source:c:\users\amarquez\downloads\practica1b_ayuda_2020\src\cliente.cpp
+	<cstdlib>
+	<cstring>
+	<iomanip>
+	<sstream>
+	"Cliente.h"
+
+1542142970 source:c:\users\amarquez\downloads\practica1b_ayuda_2020\src\contrato.cpp
+	"Contrato.h"
+
+1542144858 source:c:\users\amarquez\downloads\practica1b_ayuda_2020\src\contratomovil.cpp
+	<iostream>
+	<cstdlib>
+	<cstring>
+	<iomanip>
+	"Contrato.h"
+	"ContratoMovil.h"
+
+1542143540 source:c:\users\amarquez\downloads\practica1b_ayuda_2020\src\contratotp.cpp
+	"ContratoTP.h"
+
+1542144389 c:\users\amarquez\downloads\practica1b_ayuda_2020\include\contratotp.h
+	<iostream>
+	"Fecha.h"
+	"Contrato.h"
+
+1605099659 source:c:\users\amarquez\downloads\practica1b_ayuda_2020\src\fecha.cpp
+	"Fecha.h"
+
