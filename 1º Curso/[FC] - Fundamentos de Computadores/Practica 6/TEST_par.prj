@@ -1,0 +1,2 @@
+verilog work "netgen/par/P6_timesim.v"
+vhdl work "TEST.vhd"

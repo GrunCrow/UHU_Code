@@ -1,0 +1,18 @@
+V3 12
+FL C:/Users/afmhu/P7/antirrebotess.vhd 2020/01/22.12:04:02 P.20131013
+EN work/ANTIRREBOTES 1579692308 FL C:/Users/afmhu/P7/antirrebotess.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/ANTIRREBOTES/A_ANTIRREBOTES 1579692309 \
+      FL C:/Users/afmhu/P7/antirrebotess.vhd EN work/ANTIRREBOTES 1579692308
+FL C:/Users/afmhu/P7/Circuito_antirrebotes.vhd 2020/01/15.11:54:09 P.20131013
+FL C:/Users/afmhu/P7/P7.vhd 2020/01/22.11:53:44 P.20131013
+EN work/P7 1579691673 FL C:/Users/afmhu/P7/P7.vhd PB ieee/std_logic_1164 1381692176
+AR work/P7/A_P7 1579691674 \
+      FL C:/Users/afmhu/P7/P7.vhd EN work/P7 1579691673
+FL C:/Users/afmhu/P7/P7_COMPLETA.vhd 2020/01/22.10:04:16 P.20131013
+EN work/P7_COMPLETA 1579691675 FL C:/Users/afmhu/P7/P7_COMPLETA.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/P7_COMPLETA/Behavioral 1579691676 \
+      FL C:/Users/afmhu/P7/P7_COMPLETA.vhd EN work/P7_COMPLETA 1579691675 \
+      CP ANTIRREBOTES CP P7

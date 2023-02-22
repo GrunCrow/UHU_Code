@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Wed Jan 15 12:06:05 2020
+# Process ID: 20116
+# Log file: C:/Users/afmhu/P7/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/afmhu/P7/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/afmhu/P7/pa.fromNetlist.tcl
+set_property package_pin "" [get_ports [list  CK]]
+startgroup
+set_property package_pin K17 [get_ports CK]
+endgroup
+startgroup
+set_property package_pin L13 [get_ports E]
+endgroup
+startgroup
+set_property package_pin D18 [get_ports RS]
+endgroup
+startgroup
+set_property package_pin F12 [get_ports S]
+endgroup
+save_constraints -force

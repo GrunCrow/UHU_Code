@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/afmhu/P7/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/afmhu/P7/xst"
+elaborate
+-ifn ANTIRREBOTES.prj
+-ifmt mixed

@@ -1,0 +1,471 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Reading design: P7_COMPLETA.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "P7_COMPLETA.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "P7_COMPLETA"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : P7_COMPLETA
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/afmhu/P7/antirrebotess.vhd" in Library work.
+Entity <antirrebotes> compiled.
+Entity <antirrebotes> (Architecture <a_antirrebotes>) compiled.
+Compiling vhdl file "C:/Users/afmhu/P7/P7.vhd" in Library work.
+Entity <p7> compiled.
+Entity <p7> (Architecture <a_p7>) compiled.
+Compiling vhdl file "C:/Users/afmhu/P7/P7_COMPLETA.vhd" in Library work.
+Architecture behavioral of Entity p7_completa is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <P7_COMPLETA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ANTIRREBOTES> in library <work> (architecture <a_antirrebotes>) with generics.
+	SIMULAR = '0'
+
+Analyzing hierarchy for entity <P7> in library <work> (architecture <a_p7>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <P7_COMPLETA> in library <work> (Architecture <behavioral>).
+Entity <P7_COMPLETA> analyzed. Unit <P7_COMPLETA> generated.
+
+Analyzing generic Entity <ANTIRREBOTES> in library <work> (Architecture <a_antirrebotes>).
+	SIMULAR = '0'
+Entity <ANTIRREBOTES> analyzed. Unit <ANTIRREBOTES> generated.
+
+Analyzing Entity <P7> in library <work> (Architecture <a_p7>).
+Entity <P7> analyzed. Unit <P7> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ANTIRREBOTES>.
+    Related source file is "C:/Users/afmhu/P7/antirrebotess.vhd".
+    Found 21-bit up counter for signal <CONTADOR_1>.
+    Found 21-bit up counter for signal <CONTADOR_2>.
+    Found 1-bit register for signal <HC_1>.
+    Found 1-bit register for signal <HC_2>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   2 D-type flip-flop(s).
+Unit <ANTIRREBOTES> synthesized.
+
+
+Synthesizing Unit <P7>.
+    Related source file is "C:/Users/afmhu/P7/P7.vhd".
+    Found finite state machine <FSM_0> for signal <estado>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 14                                             |
+    | Inputs             | 1                                              |
+    | Outputs            | 7                                              |
+    | Clock              | CLK_SR                    (rising_edge)        |
+    | Reset              | RESET                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <P7> synthesized.
+
+
+Synthesizing Unit <P7_COMPLETA>.
+    Related source file is "C:/Users/afmhu/P7/P7_COMPLETA.vhd".
+Unit <P7_COMPLETA> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 21-bit up counter                                     : 2
+# Registers                                            : 2
+ 1-bit register                                        : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <C2/estado/FSM> on signal <estado[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 100   | 100
+ 010   | 010
+ 011   | 011
+ 101   | 101
+ 110   | 110
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Counters                                             : 2
+ 21-bit up counter                                     : 2
+# Registers                                            : 2
+ Flip-Flops                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <P7_COMPLETA> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block P7_COMPLETA, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 47
+ Flip-Flops                                            : 47
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : P7_COMPLETA.ngr
+Top Level Output File Name         : P7_COMPLETA
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 8
+
+Cell Usage :
+# BELS                             : 132
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 40
+#      LUT3                        : 1
+#      LUT4                        : 3
+#      MUXCY                       : 40
+#      VCC                         : 1
+#      XORCY                       : 42
+# FlipFlops/Latches                : 47
+#      FDC                         : 4
+#      FDC_1                       : 1
+#      FDCE                        : 42
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 6
+#      IBUF                        : 2
+#      OBUF                        : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       26  out of   4656     0%  
+ Number of Slice Flip Flops:             47  out of   9312     0%  
+ Number of 4 input LUTs:                 48  out of   9312     0%  
+ Number of IOs:                           8
+ Number of bonded IOBs:                   8  out of    232     3%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)   | Load  |
+-----------------------------------+-------------------------+-------+
+CLK_CR                             | BUFGP                   | 2     |
+CLK_50MHZ                          | BUFGP                   | 42    |
+C1/HC_1                            | NONE(C2/estado_FSM_FFd3)| 3     |
+-----------------------------------+-------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------------------+------------------------+-------+
+Control Signal                                       | Buffer(FF name)        | Load  |
+-----------------------------------------------------+------------------------+-------+
+C1/CONTADOR_1<20>_inv(C1/CONTADOR_1<20>_inv1_INV_0:O)| NONE(C1/CONTADOR_2_0)  | 22    |
+CLK_SR_inv(CLK_SR_inv1_INV_0:O)                      | NONE(C1/CONTADOR_1_0)  | 21    |
+RESET                                                | IBUF                   | 3     |
+C1/CONTADOR_2_20(C1/CONTADOR_2_20:Q)                 | NONE(C1/HC_1)          | 1     |
+-----------------------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 4.528ns (Maximum Frequency: 220.848MHz)
+   Minimum input arrival time before clock: 2.936ns
+   Maximum output required time after clock: 5.795ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK_50MHZ'
+  Clock period: 4.528ns (frequency: 220.848MHz)
+  Total number of paths / destination ports: 483 / 63
+-------------------------------------------------------------------------
+Delay:               4.528ns (Levels of Logic = 21)
+  Source:            C1/CONTADOR_1_1 (FF)
+  Destination:       C1/CONTADOR_1_20 (FF)
+  Source Clock:      CLK_50MHZ rising
+  Destination Clock: CLK_50MHZ rising
+
+  Data Path: C1/CONTADOR_1_1 to C1/CONTADOR_1_20
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             1   0.591   0.595  C1/CONTADOR_1_1 (C1/CONTADOR_1_1)
+     LUT1:I0->O            1   0.704   0.000  C1/Mcount_CONTADOR_1_cy<1>_rt (C1/Mcount_CONTADOR_1_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  C1/Mcount_CONTADOR_1_cy<1> (C1/Mcount_CONTADOR_1_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  C1/Mcount_CONTADOR_1_cy<2> (C1/Mcount_CONTADOR_1_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  C1/Mcount_CONTADOR_1_cy<3> (C1/Mcount_CONTADOR_1_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  C1/Mcount_CONTADOR_1_cy<4> (C1/Mcount_CONTADOR_1_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  C1/Mcount_CONTADOR_1_cy<5> (C1/Mcount_CONTADOR_1_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  C1/Mcount_CONTADOR_1_cy<6> (C1/Mcount_CONTADOR_1_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  C1/Mcount_CONTADOR_1_cy<7> (C1/Mcount_CONTADOR_1_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  C1/Mcount_CONTADOR_1_cy<8> (C1/Mcount_CONTADOR_1_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  C1/Mcount_CONTADOR_1_cy<9> (C1/Mcount_CONTADOR_1_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  C1/Mcount_CONTADOR_1_cy<10> (C1/Mcount_CONTADOR_1_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  C1/Mcount_CONTADOR_1_cy<11> (C1/Mcount_CONTADOR_1_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  C1/Mcount_CONTADOR_1_cy<12> (C1/Mcount_CONTADOR_1_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  C1/Mcount_CONTADOR_1_cy<13> (C1/Mcount_CONTADOR_1_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  C1/Mcount_CONTADOR_1_cy<14> (C1/Mcount_CONTADOR_1_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  C1/Mcount_CONTADOR_1_cy<15> (C1/Mcount_CONTADOR_1_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  C1/Mcount_CONTADOR_1_cy<16> (C1/Mcount_CONTADOR_1_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  C1/Mcount_CONTADOR_1_cy<17> (C1/Mcount_CONTADOR_1_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  C1/Mcount_CONTADOR_1_cy<18> (C1/Mcount_CONTADOR_1_cy<18>)
+     MUXCY:CI->O           0   0.059   0.000  C1/Mcount_CONTADOR_1_cy<19> (C1/Mcount_CONTADOR_1_cy<19>)
+     XORCY:CI->O           1   0.804   0.000  C1/Mcount_CONTADOR_1_xor<20> (Result<20>)
+     FDCE:D                    0.308          C1/CONTADOR_1_20
+    ----------------------------------------
+    Total                      4.528ns (3.933ns logic, 0.595ns route)
+                                       (86.9% logic, 13.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'C1/HC_1'
+  Clock period: 2.411ns (frequency: 414.766MHz)
+  Total number of paths / destination ports: 9 / 3
+-------------------------------------------------------------------------
+Delay:               2.411ns (Levels of Logic = 1)
+  Source:            C2/estado_FSM_FFd1 (FF)
+  Destination:       C2/estado_FSM_FFd1 (FF)
+  Source Clock:      C1/HC_1 rising
+  Destination Clock: C1/HC_1 rising
+
+  Data Path: C2/estado_FSM_FFd1 to C2/estado_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.591   0.808  C2/estado_FSM_FFd1 (C2/estado_FSM_FFd1)
+     LUT4:I0->O            1   0.704   0.000  C2/estado_FSM_FFd1-In1 (C2/estado_FSM_FFd1-In)
+     FDC:D                     0.308          C2/estado_FSM_FFd1
+    ----------------------------------------
+    Total                      2.411ns (1.603ns logic, 0.808ns route)
+                                       (66.5% logic, 33.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'C1/HC_1'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              2.936ns (Levels of Logic = 2)
+  Source:            E (PAD)
+  Destination:       C2/estado_FSM_FFd3 (FF)
+  Destination Clock: C1/HC_1 rising
+
+  Data Path: E to C2/estado_FSM_FFd3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.218   0.706  E_IBUF (E_IBUF)
+     LUT4:I0->O            1   0.704   0.000  C2/estado_FSM_FFd3-In1 (C2/estado_FSM_FFd3-In)
+     FDC:D                     0.308          C2/estado_FSM_FFd3
+    ----------------------------------------
+    Total                      2.936ns (2.230ns logic, 0.706ns route)
+                                       (76.0% logic, 24.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'C1/HC_1'
+  Total number of paths / destination ports: 6 / 4
+-------------------------------------------------------------------------
+Offset:              5.795ns (Levels of Logic = 2)
+  Source:            C2/estado_FSM_FFd2 (FF)
+  Destination:       S (PAD)
+  Source Clock:      C1/HC_1 rising
+
+  Data Path: C2/estado_FSM_FFd2 to S
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.591   0.808  C2/estado_FSM_FFd2 (C2/estado_FSM_FFd2)
+     LUT3:I0->O            1   0.704   0.420  C2/estado_FSM_Out61 (S_OBUF)
+     OBUF:I->O                 3.272          S_OBUF (S)
+    ----------------------------------------
+    Total                      5.795ns (4.567ns logic, 1.228ns route)
+                                       (78.8% logic, 21.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.35 secs
+ 
+--> 
+
+Total memory usage is 4521856 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

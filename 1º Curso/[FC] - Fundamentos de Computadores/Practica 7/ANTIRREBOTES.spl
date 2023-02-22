@@ -1,0 +1,6 @@
+[Inputs]
+CLK_50MHZ
+E
+[Outputs]
+S
+[BiDir]

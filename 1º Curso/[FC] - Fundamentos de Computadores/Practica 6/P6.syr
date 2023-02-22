@@ -1,0 +1,314 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: P6.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "P6.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "P6"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : P6
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/afmhu/P6/P6.vhd" in Library work.
+Architecture a_p6 of Entity p6 is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <P6> in library <work> (architecture <a_p6>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <P6> in library <work> (Architecture <a_p6>).
+INFO:Xst:1561 - "C:/Users/afmhu/P6/P6.vhd" line 30: Mux is complete : default of case is discarded
+Entity <P6> analyzed. Unit <P6> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <P6>.
+    Related source file is "C:/Users/afmhu/P6/P6.vhd".
+    Found 5-bit 8-to-1 multiplexer for signal <F>.
+    Found 5-bit adder for signal <F$addsub0000> created at line 23.
+    Found 5-bit adder for signal <F$addsub0001> created at line 23.
+    Found 5-bit subtractor for signal <F$addsub0002> created at line 24.
+    Found 5-bit adder for signal <F$addsub0003> created at line 25.
+    Found 5-bit subtractor for signal <F$addsub0004> created at line 26.
+    Summary:
+	inferred   5 Adder/Subtractor(s).
+	inferred   5 Multiplexer(s).
+Unit <P6> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 5
+ 5-bit adder                                           : 3
+ 5-bit subtractor                                      : 2
+# Multiplexers                                         : 1
+ 5-bit 8-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 5-bit adder                                           : 1
+ 5-bit adder carry in                                  : 1
+ 5-bit subtractor                                      : 2
+# Multiplexers                                         : 1
+ 5-bit 8-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <P6> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block P6, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : P6.ngr
+Top Level Output File Name         : P6
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 17
+
+Cell Usage :
+# BELS                             : 58
+#      INV                         : 1
+#      LUT2                        : 9
+#      LUT3                        : 11
+#      LUT4                        : 15
+#      MUXCY                       : 4
+#      MUXF5                       : 10
+#      MUXF6                       : 4
+#      XORCY                       : 4
+# IO Buffers                       : 17
+#      IBUF                        : 12
+#      OBUF                        : 5
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       19  out of   4656     0%  
+ Number of 4 input LUTs:                 36  out of   9312     0%  
+ Number of IOs:                          17
+ Number of bonded IOBs:                  17  out of    232     7%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 10.579ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 147 / 5
+-------------------------------------------------------------------------
+Delay:               10.579ns (Levels of Logic = 7)
+  Source:            A<0> (PAD)
+  Destination:       F<4> (PAD)
+
+  Data Path: A<0> to F<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            13   1.218   1.158  A_0_IBUF (A_0_IBUF)
+     LUT2:I0->O            2   0.704   0.451  Madd_F_addsub0003_cy<0>11 (Madd_F_addsub0003_cy<0>)
+     LUT4:I3->O            1   0.704   0.499  Madd_F_addsub0003_cy<3>11 (Madd_F_addsub0003_cy<3>)
+     LUT3:I1->O            1   0.704   0.000  Mmux_F_64 (Mmux_F_64)
+     MUXF5:I1->O           1   0.321   0.424  Mmux_F_5_f5 (Mmux_F_5_f5)
+     LUT4:I3->O            1   0.704   0.420  S<2>1 (F_4_OBUF)
+     OBUF:I->O                 3.272          F_4_OBUF (F<4>)
+    ----------------------------------------
+    Total                     10.579ns (7.627ns logic, 2.952ns route)
+                                       (72.1% logic, 27.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.57 secs
+ 
+--> 
+
+Total memory usage is 4521836 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

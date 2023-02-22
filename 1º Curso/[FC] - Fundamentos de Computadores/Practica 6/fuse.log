@@ -1,0 +1,34 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib simprims_ver -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/afmhu/P6/TEST_isim_par.exe -prj C:/Users/afmhu/P6/TEST_par.prj work.TEST work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/afmhu/P6/netgen/par/P6_timesim.v" into library work
+Parsing VHDL file "C:/Users/afmhu/P6/TEST.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module glbl
+Compiling module X_BUF
+Compiling module X_XOR2
+Compiling module mux
+Compiling module X_MUX2
+Compiling module X_AND2
+Compiling module X_IPAD
+Compiling module X_OPAD
+Compiling module X_OBUF
+Compiling module X_LUT4(INIT=16'b01)
+Compiling module X_ONE
+Compiling module P6
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package vl_types
+Compiling architecture behavior of entity test
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 6 VHDL Units
+Compiled 111 Verilog Units
+Built simulation executable C:/Users/afmhu/P6/TEST_isim_par.exe
+Fuse Memory Usage: 37328 KB
+Fuse CPU Usage: 1077 ms

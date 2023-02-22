@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\afmhu\P7\P7.ncd
+OUTFILE=C:\Users\afmhu\P7\P7.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\Users\afmhu\P7
+LICENSE=ISE
+USER_INFO=211852260_0_0_169

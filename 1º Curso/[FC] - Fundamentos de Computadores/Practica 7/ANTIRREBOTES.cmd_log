@@ -1,0 +1,4 @@
+vhdtdtfi -lib work Circuito_antirrebotes.vhd -prj P7 -o ANTIRREBOTES.spl -module ANTIRREBOTES -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e ANTIRREBOTES.spl C:/Users/afmhu/P7/ANTIRREBOTES.sym 
+vhdtdtfi -lib work antirrebotess.vhd -prj P7 -o ANTIRREBOTES.spl -module ANTIRREBOTES -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e ANTIRREBOTES.spl C:/Users/afmhu/P7/ANTIRREBOTES.sym 

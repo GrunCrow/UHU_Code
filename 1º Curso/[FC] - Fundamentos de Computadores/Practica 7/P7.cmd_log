@@ -1,0 +1,46 @@
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7.xst" -ofn "C:/Users/afmhu/P7/P7.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7.xst" -ofn "C:/Users/afmhu/P7/P7.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7.xst" -ofn "C:/Users/afmhu/P7/P7.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7.xst" -ofn "C:/Users/afmhu/P7/P7.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7.xst" -ofn "C:/Users/afmhu/P7/P7.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7.xst" -ofn "C:/Users/afmhu/P7/P7.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7.xst" -ofn "C:/Users/afmhu/P7/P7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 P7.ngc P7.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o P7_map.ncd P7.ngd P7.pcf 
+par -w -intstyle ise -ol high -t 1 P7_map.ncd P7.ncd P7.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml P7.twx P7.ncd -o P7.twr P7.pcf 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7.xst" -ofn "C:/Users/afmhu/P7/P7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 P7.ngc P7.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o P7_map.ncd P7.ngd P7.pcf 
+par -w -intstyle ise -ol high -t 1 P7_map.ncd P7.ncd P7.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml P7.twx P7.ncd -o P7.twr P7.pcf 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7.xst" -ofn "C:/Users/afmhu/P7/P7.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7.xst" -ofn "C:/Users/afmhu/P7/P7.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7.xst" -ofn "C:/Users/afmhu/P7/P7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 P7.ngc P7.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o P7_map.ncd P7.ngd P7.pcf 
+par -w -intstyle ise -ol high -t 1 P7_map.ncd P7.ncd P7.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml P7.twx P7.ncd -o P7.twr P7.pcf 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7.xst" -ofn "C:/Users/afmhu/P7/P7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 P7.ngc P7.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o P7_map.ncd P7.ngd P7.pcf 
+par -w -intstyle ise -ol high -t 1 P7_map.ncd P7.ncd P7.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml P7.twx P7.ncd -o P7.twr P7.pcf 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7.xst" -ofn "C:/Users/afmhu/P7/P7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 P7.ngc P7.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o P7_map.ncd P7.ngd P7.pcf 
+par -w -intstyle ise -ol high -t 1 P7_map.ncd P7.ncd P7.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml P7.twx P7.ncd -o P7.twr P7.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc restricciones_P7.ucf -uc restricciones_antirrebotes.ucf -p xc3s500e-fg320-4 P7.ngc P7.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc restricciones_P7.ucf -p xc3s500e-fg320-4 P7.ngc P7.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 P7.ngc P7.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o P7_map.ncd P7.ngd P7.pcf 
+par -w -intstyle ise -ol high -t 1 P7_map.ncd P7.ncd P7.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml P7.twx P7.ncd -o P7.twr P7.pcf 
+bitgen -intstyle ise -f P7.ut P7.ncd 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7.xst" -ofn "C:/Users/afmhu/P7/P7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc P7.ucf -p xc3s500e-fg320-4 P7.ngc P7.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o P7_map.ncd P7.ngd P7.pcf 
+par -w -intstyle ise -ol high -t 1 P7_map.ncd P7.ncd P7.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml P7.twx P7.ncd -o P7.twr P7.pcf -ucf P7.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc P7.ucf -p xc3s500e-fg320-4 P7.ngc P7.ngd  

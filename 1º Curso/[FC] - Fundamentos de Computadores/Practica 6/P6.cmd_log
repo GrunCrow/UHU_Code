@@ -1,0 +1,19 @@
+xst -intstyle ise -ifn "C:/Users/afmhu/P6/P6.xst" -ofn "C:/Users/afmhu/P6/P6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 P6.ngc P6.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o P6_map.ncd P6.ngd P6.pcf 
+par -w -intstyle ise -ol high -t 1 P6_map.ncd P6.ncd P6.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml P6.twx P6.ncd -o P6.twr P6.pcf 
+xst -intstyle ise -ifn "C:/Users/afmhu/P6/P6.xst" -ofn "C:/Users/afmhu/P6/P6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 P6.ngc P6.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o P6_map.ncd P6.ngd P6.pcf 
+par -w -intstyle ise -ol high -t 1 P6_map.ncd P6.ncd P6.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml P6.twx P6.ncd -o P6.twr P6.pcf 
+vhdtdtfi -lib work P6.vhd -prj P6 -o P6.spl -module P6 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e P6.spl C:/Users/afmhu/P6/P6.sym 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc P6.ucf -p xc3s500e-fg320-4 P6.ngc P6.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc P6.ucf -p xc3s500e-fg320-4 P6.ngc P6.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o P6_map.ncd P6.ngd P6.pcf 
+par -w -intstyle ise -ol high -t 1 P6_map.ncd P6.ncd P6.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml P6.twx P6.ncd -o P6.twr P6.pcf -ucf P6.ucf 
+netgen -intstyle ise -s 4  -pcf P6.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim P6.ncd P6_timesim.v 
+bitgen -intstyle ise -f P6.ut P6.ncd 

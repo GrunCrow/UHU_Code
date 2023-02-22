@@ -1,0 +1,371 @@
+
+Started : "Synthesize - XST".
+Running xst...
+Command Line: xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7.xst" -ofn "C:/Users/afmhu/P7/P7.syr"
+Reading design: P7.prj
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/afmhu/P7/P7.vhd" in Library work.
+Architecture a_p7 of Entity p7 is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <P7> in library <work> (architecture <a_p7>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <P7> in library <work> (Architecture <a_p7>).
+Entity <P7> analyzed. Unit <P7> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <P7>.
+    Related source file is "C:/Users/afmhu/P7/P7.vhd".
+WARNING:Xst:647 - Input <CK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <E> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <RS> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <estado> is used but never assigned. This sourceless signal will be automatically connected to value 000.
+    Using one-hot encoding for signal <estado>.
+Unit <P7> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <P7> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block P7, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+=========================================================================
+
+Process "Synthesize - XST" completed successfully
+
+Started : "Translate".
+Running ngdbuild...
+Command Line: ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 P7.ngc P7.ngd
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 P7.ngc P7.ngd
+
+Reading NGO file "C:/Users/afmhu/P7/P7.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGD file "P7.ngd" ...
+Total REAL time to NGDBUILD completion:  5 sec
+Total CPU time to NGDBUILD completion:   4 sec
+
+Writing NGDBUILD log file "P7.bld"...
+
+NGDBUILD done.
+
+Process "Translate" completed successfully
+
+Started : "Map".
+Running map...
+Command Line: map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o P7_map.ncd P7.ngd P7.pcf
+Using target part "3s500efg320-4".
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+Updating timing models...
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+Logic Distribution:
+    Number of Slices containing only related logic:       0 out of       0   0%
+    Number of Slices containing unrelated logic:          0 out of       0   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Number of bonded IOBs:                  1 out of     232    1%
+
+Peak Memory Usage:  4384 MB
+Total REAL time to MAP completion:  3 secs 
+Total CPU time to MAP completion:   2 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "P7_map.mrp" for details.
+
+Process "Map" completed successfully
+
+Started : "Place & Route".
+Running par...
+Command Line: par -w -intstyle ise -ol high -t 1 P7_map.ncd P7.ncd P7.pcf
+
+
+
+Constraints file: P7.pcf.
+Loading device for application Rf_Device from file '3s500e.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+   "P7" is an NCD, version 3.2, device xc3s500e, package fg320, speed -4
+
+Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.320 Volts)
+
+INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
+   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
+   internal clocks in this design. Because there are not defined timing requirements, a timing score will not be
+   reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock.
+   Note: For the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high".
+
+Device speed data version:  "PRODUCTION 1.27 2013-10-13".
+
+
+Design Summary Report:
+
+ Number of External IOBs                           1 out of 232     1%
+
+   Number of External Input IOBs                  0
+
+
+   Number of External Output IOBs                 1
+
+      Number of External Output IOBs              1
+
+   Number of External Bidir IOBs                  0
+
+
+
+
+Overall effort level (-ol):   High 
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 1 secs 
+Finished initial Timing Analysis.  REAL time: 1 secs 
+
+
+Starting Placer
+Total REAL time at the beginning of Placer: 1 secs 
+Total CPU  time at the beginning of Placer: 1 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:5) REAL time: 2 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:5) REAL time: 2 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:5) REAL time: 2 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+
+Phase 4.2  Initial Clock and IO Placement (Checksum:5) REAL time: 2 secs 
+
+Phase 5.30  Global Clock Region Assignment
+Phase 5.30  Global Clock Region Assignment (Checksum:5) REAL time: 2 secs 
+
+Phase 6.36  Local Placement Optimization
+Phase 6.36  Local Placement Optimization (Checksum:5) REAL time: 2 secs 
+
+Phase 7.3  Local Placement Optimization
+
+Phase 7.3  Local Placement Optimization (Checksum:5) REAL time: 2 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:5) REAL time: 2 secs 
+
+Phase 9.8  Global Placement
+Phase 9.8  Global Placement (Checksum:5) REAL time: 2 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:5) REAL time: 2 secs 
+
+Phase 11.18  Placement Optimization
+Phase 11.18  Placement Optimization (Checksum:5) REAL time: 2 secs 
+
+Phase 12.5  Local Placement Optimization
+Phase 12.5  Local Placement Optimization (Checksum:5) REAL time: 2 secs 
+
+Total REAL time to Placer completion: 2 secs 
+Total CPU  time to Placer completion: 2 secs 
+Writing design to file P7.ncd
+
+
+
+Starting Router
+
+
+Phase  1  : 1 unrouted;      REAL time: 7 secs 
+
+Phase  2  : 1 unrouted;      REAL time: 7 secs 
+
+Phase  3  : 0 unrouted;      REAL time: 7 secs 
+
+Phase  4  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+
+Updating file: P7.ncd with current fully routed design.
+
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+
+Total REAL time to Router completion: 8 secs 
+Total CPU time to Router completion: 7 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+Timing Score: 0 (Setup: 0, Hold: 0)
+
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 9 secs 
+Total CPU time to PAR completion: 8 secs 
+
+Peak Memory Usage:  4386 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 1
+
+Writing design to file P7.ncd
+
+
+
+PAR done!
+
+Process "Place & Route" completed successfully
+
+Started : "Generate Post-Place & Route Static Timing".
+Running trce...
+Command Line: trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml P7.twx P7.ncd -o P7.twr P7.pcf
+Loading device for application Rf_Device from file '3s500e.nph' in environment
+C:\Xilinx\14.7\ISE_DS\ISE\.
+   "P7" is an NCD, version 3.2, device xc3s500e, package fg320, speed -4
+
+Analysis completed Wed Jan 15 11:40:18 2020
+--------------------------------------------------------------------------------
+
+Generating Report ...
+
+Number of warnings: 0
+Total time: 1 secs 
+
+Process "Generate Post-Place & Route Static Timing" completed successfully

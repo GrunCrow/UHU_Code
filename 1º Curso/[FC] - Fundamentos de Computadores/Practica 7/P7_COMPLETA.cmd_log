@@ -1,0 +1,93 @@
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc restricciones_antirrebotes.ucf -p xc3s500e-fg320-4 P7_COMPLETA.ngc P7_COMPLETA.ngd  
+vhdtdtfi -lib work P7.vhd -lib work antirrebotess.vhd -lib work P7_COMPLETA.vhd -prj P7 -o P7_COMPLETA.spl -module P7_COMPLETA -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e P7_COMPLETA.spl C:/Users/afmhu/P7/P7_COMPLETA.sym 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc restricciones_antirrebotes.ucf -p xc3s500e-fg320-4 P7_COMPLETA.ngc P7_COMPLETA.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc restricciones_antirrebotes.ucf -p xc3s500e-fg320-4 P7_COMPLETA.ngc P7_COMPLETA.ngd  
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc restricciones_antirrebotes.ucf -p xc3s500e-fg320-4 P7_COMPLETA.ngc P7_COMPLETA.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc restricciones_antirrebotes.ucf -p xc3s500e-fg320-4 P7_COMPLETA.ngc P7_COMPLETA.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc restricciones_antirrebotes.ucf -p xc3s500e-fg320-4 P7_COMPLETA.ngc P7_COMPLETA.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc restricciones_antirrebotes.ucf -p xc3s500e-fg320-4 P7_COMPLETA.ngc P7_COMPLETA.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o P7_COMPLETA_map.ncd P7_COMPLETA.ngd P7_COMPLETA.pcf 
+par -w -intstyle ise -ol high -t 1 P7_COMPLETA_map.ncd P7_COMPLETA.ncd P7_COMPLETA.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml P7_COMPLETA.twx P7_COMPLETA.ncd -o P7_COMPLETA.twr P7_COMPLETA.pcf -ucf restricciones_antirrebotes.ucf 
+bitgen -intstyle ise -f P7_COMPLETA.ut P7_COMPLETA.ncd 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc restricciones_antirrebotes.ucf -p xc3s500e-fg320-4 P7_COMPLETA.ngc P7_COMPLETA.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o P7_COMPLETA_map.ncd P7_COMPLETA.ngd P7_COMPLETA.pcf 
+par -w -intstyle ise -ol high -t 1 P7_COMPLETA_map.ncd P7_COMPLETA.ncd P7_COMPLETA.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml P7_COMPLETA.twx P7_COMPLETA.ncd -o P7_COMPLETA.twr P7_COMPLETA.pcf -ucf restricciones_antirrebotes.ucf 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc restricciones_antirrebotes.ucf -p xc3s500e-fg320-4 P7_COMPLETA.ngc P7_COMPLETA.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o P7_COMPLETA_map.ncd P7_COMPLETA.ngd P7_COMPLETA.pcf 
+par -w -intstyle ise -ol high -t 1 P7_COMPLETA_map.ncd P7_COMPLETA.ncd P7_COMPLETA.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml P7_COMPLETA.twx P7_COMPLETA.ncd -o P7_COMPLETA.twr P7_COMPLETA.pcf -ucf restricciones_antirrebotes.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc restricciones_antirrebotes.ucf -p xc3s500e-fg320-4 P7_COMPLETA.ngc P7_COMPLETA.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o P7_COMPLETA_map.ncd P7_COMPLETA.ngd P7_COMPLETA.pcf 
+par -w -intstyle ise -ol high -t 1 P7_COMPLETA_map.ncd P7_COMPLETA.ncd P7_COMPLETA.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml P7_COMPLETA.twx P7_COMPLETA.ncd -o P7_COMPLETA.twr P7_COMPLETA.pcf -ucf restricciones_antirrebotes.ucf 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc restricciones_antirrebotes.ucf -p xc3s500e-fg320-4 P7_COMPLETA.ngc P7_COMPLETA.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o P7_COMPLETA_map.ncd P7_COMPLETA.ngd P7_COMPLETA.pcf 
+par -w -intstyle ise -ol high -t 1 P7_COMPLETA_map.ncd P7_COMPLETA.ncd P7_COMPLETA.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml P7_COMPLETA.twx P7_COMPLETA.ncd -o P7_COMPLETA.twr P7_COMPLETA.pcf -ucf restricciones_antirrebotes.ucf 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc restricciones_antirrebotes.ucf -p xc3s500e-fg320-4 P7_COMPLETA.ngc P7_COMPLETA.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o P7_COMPLETA_map.ncd P7_COMPLETA.ngd P7_COMPLETA.pcf 
+par -w -intstyle ise -ol high -t 1 P7_COMPLETA_map.ncd P7_COMPLETA.ncd P7_COMPLETA.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml P7_COMPLETA.twx P7_COMPLETA.ncd -o P7_COMPLETA.twr P7_COMPLETA.pcf -ucf restricciones_antirrebotes.ucf 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc restricciones_antirrebotes.ucf -p xc3s500e-fg320-4 P7_COMPLETA.ngc P7_COMPLETA.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o P7_COMPLETA_map.ncd P7_COMPLETA.ngd P7_COMPLETA.pcf 
+par -w -intstyle ise -ol high -t 1 P7_COMPLETA_map.ncd P7_COMPLETA.ncd P7_COMPLETA.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml P7_COMPLETA.twx P7_COMPLETA.ncd -o P7_COMPLETA.twr P7_COMPLETA.pcf -ucf restricciones_antirrebotes.ucf 
+vhdtdtfi -lib work P7.vhd -lib work antirrebotess.vhd -lib work P7_COMPLETA.vhd -prj P7 -o P7_COMPLETA.spl -module P7_COMPLETA -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e P7_COMPLETA.spl C:/Users/afmhu/P7/P7_COMPLETA.sym 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc restricciones_antirrebotes.ucf -p xc3s500e-fg320-4 P7_COMPLETA.ngc P7_COMPLETA.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o P7_COMPLETA_map.ncd P7_COMPLETA.ngd P7_COMPLETA.pcf 
+par -w -intstyle ise -ol high -t 1 P7_COMPLETA_map.ncd P7_COMPLETA.ncd P7_COMPLETA.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml P7_COMPLETA.twx P7_COMPLETA.ncd -o P7_COMPLETA.twr P7_COMPLETA.pcf -ucf restricciones_antirrebotes.ucf 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/P7/P7_COMPLETA.xst" -ofn "C:/Users/afmhu/P7/P7_COMPLETA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc restricciones_spartan3E.ucf -p xc3s500e-fg320-4 P7_COMPLETA.ngc P7_COMPLETA.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o P7_COMPLETA_map.ncd P7_COMPLETA.ngd P7_COMPLETA.pcf 
+par -w -intstyle ise -ol high -t 1 P7_COMPLETA_map.ncd P7_COMPLETA.ncd P7_COMPLETA.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc restricciones_spartan3E.ucf -p xc3s500e-fg320-4 P7_COMPLETA.ngc P7_COMPLETA.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o P7_COMPLETA_map.ncd P7_COMPLETA.ngd P7_COMPLETA.pcf 
+par -w -intstyle ise -ol high -t 1 P7_COMPLETA_map.ncd P7_COMPLETA.ncd P7_COMPLETA.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml P7_COMPLETA.twx P7_COMPLETA.ncd -o P7_COMPLETA.twr P7_COMPLETA.pcf -ucf restricciones_spartan3E.ucf 
+bitgen -intstyle ise -f P7_COMPLETA.ut P7_COMPLETA.ncd 

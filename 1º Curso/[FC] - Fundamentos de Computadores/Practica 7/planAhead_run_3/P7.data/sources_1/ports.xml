@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Port Id="CLK_CR" Dir="IN"/>
+		<Port Id="RESET" Dir="IN"/>
+		<Port Id="Q0" Dir="OUT"/>
+		<Port Id="Q1" Dir="OUT"/>
+		<Port Id="E" Dir="IN"/>
+		<Port Id="Q2" Dir="OUT"/>
+		<Port Id="S" Dir="OUT"/>
+		<Port Id="CLK_50MHZ" Dir="IN"/>
+	</Ifc>
+</Interface>
+

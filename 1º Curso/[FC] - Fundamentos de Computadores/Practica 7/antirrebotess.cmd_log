@@ -1,0 +1,1 @@
+vhdtdtfi -prj P7 -o antirrebotess.spl -module antirrebotess -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 

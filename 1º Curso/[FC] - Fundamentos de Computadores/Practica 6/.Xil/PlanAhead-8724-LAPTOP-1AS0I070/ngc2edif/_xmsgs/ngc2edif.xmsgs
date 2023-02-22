@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="NetListWriters" num="298" delta="new" >No output is written to <arg fmt="%s" index="1">P6.xncf</arg>, ignored.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">F_addsub0002</arg><arg fmt="%s" index="2">&lt;4 : 2&gt;</arg> on block <arg fmt="%s" index="3">P6</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">Madd_F_addsub0003_cy</arg><arg fmt="%s" index="2">&lt;3 : 0&gt;</arg> on block <arg fmt="%s" index="3">P6</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+</messages>
+

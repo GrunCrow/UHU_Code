@@ -1,0 +1,11 @@
+[Inputs]
+RESET
+CLK_50MHZ
+CLK_CR
+E
+[Outputs]
+Q2
+Q1
+Q0
+S
+[BiDir]

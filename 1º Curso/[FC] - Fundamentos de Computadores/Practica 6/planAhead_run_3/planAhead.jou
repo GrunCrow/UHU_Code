@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Wed Dec 18 09:41:08 2019
+# Process ID: 8724
+# Log file: C:/Users/afmhu/P6/planAhead_run_3/planAhead.log
+# Journal file: C:/Users/afmhu/P6/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/afmhu/P6/pa.fromNetlist.tcl
+set_property package_pin "" [get_ports [list  {A[3]}]]
+startgroup
+set_property package_pin N17 [get_ports {S[2]}]
+endgroup
+startgroup
+set_property package_pin H18 [get_ports {S[1]}]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports {S[0]}]
+endgroup
+startgroup
+set_property package_pin F9 [get_ports {F[4]}]
+endgroup
+startgroup
+set_property package_pin E9 [get_ports {F[3]}]
+endgroup
+startgroup
+set_property package_pin D11 [get_ports {F[2]}]
+endgroup
+startgroup
+set_property package_pin F11 [get_ports {F[1]}]
+endgroup
+startgroup
+set_property package_pin C11 [get_ports {F[1]}]
+endgroup
+startgroup
+set_property package_pin F11 [get_ports {F[0]}]
+endgroup
+save_constraints

@@ -1,0 +1,18 @@
+xst -intstyle ise -ifn "C:/Users/afmhu/practica5/P5.xst" -ofn "C:/Users/afmhu/practica5/P5.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/practica5/P5.xst" -ofn "C:/Users/afmhu/practica5/P5.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/practica5/P5.xst" -ofn "C:/Users/afmhu/practica5/P5.syr" 
+xst -intstyle ise -ifn "C:/Users/afmhu/practica5/P5.xst" -ofn "C:/Users/afmhu/practica5/P5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 P5.ngc P5.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o P5_map.ncd P5.ngd P5.pcf 
+par -w -intstyle ise -ol high -t 1 P5_map.ncd P5.ncd P5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml P5.twx P5.ncd -o P5.twr P5.pcf 
+xst -intstyle ise -ifn "C:/Users/afmhu/practica5/P5.xst" -ofn "C:/Users/afmhu/practica5/P5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 P5.ngc P5.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o P5_map.ncd P5.ngd P5.pcf 
+par -w -intstyle ise -ol high -t 1 P5_map.ncd P5.ncd P5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml P5.twx P5.ncd -o P5.twr P5.pcf 
+xst -intstyle ise -ifn "C:/Users/afmhu/practica5/P5.xst" -ofn "C:/Users/afmhu/practica5/P5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 P5.ngc P5.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o P5_map.ncd P5.ngd P5.pcf 
+par -w -intstyle ise -ol high -t 1 P5_map.ncd P5.ncd P5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml P5.twx P5.ncd -o P5.twr P5.pcf 

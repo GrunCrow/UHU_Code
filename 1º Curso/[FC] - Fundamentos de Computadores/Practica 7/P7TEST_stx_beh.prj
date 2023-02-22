@@ -1,0 +1,4 @@
+vhdl isim_temp "P7.vhd"
+vhdl isim_temp "antirrebotess.vhd"
+vhdl isim_temp "P7_COMPLETA.vhd"
+vhdl isim_temp "P7TEST.vhd"
