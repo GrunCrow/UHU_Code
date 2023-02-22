@@ -1,0 +1,57 @@
+# depslib dependency file v1.0
+1587980239 source:c:\users\albam\desktop\gruncrow\uhu\ed\practicas\practica 1\main.cpp
+	<iostream>
+	<windows.h>
+	<fstream>
+	<autobuses.h>
+	<itinerarios.h>
+	<conio.h>
+	<cstdlib>
+
+1587981699 source:c:\users\albam\desktop\gruncrow\uhu\ed\practicas\practica 1\src\autobuses.cpp
+	"autobuses.h"
+	<cstring>
+	<conio.h>
+
+1587900335 c:\users\albam\desktop\gruncrow\uhu\ed\practicas\practica 1\include\autobuses.h
+	<fstream>
+	<iostream>
+
+1587982100 source:c:\users\albam\desktop\gruncrow\uhu\ed\practicas\practica 1\src\itinerarios.cpp
+	"itinerarios.h"
+	<cstring>
+	<conio.h>
+	<autobuses.h>
+
+1587900349 c:\users\albam\desktop\gruncrow\uhu\ed\practicas\practica 1\include\itinerarios.h
+	<fstream>
+	<iostream>
+
+1588681499 source:c:\users\albam\desktop\gruncrow\uhu\ed\practicas\practica 1 - modificacion\src\autobuses.cpp
+	"autobuses.h"
+	<cstring>
+	<conio.h>
+
+1587900335 c:\users\albam\desktop\gruncrow\uhu\ed\practicas\practica 1 - modificacion\include\autobuses.h
+	<fstream>
+	<iostream>
+
+1588677376 source:c:\users\albam\desktop\gruncrow\uhu\ed\practicas\practica 1 - modificacion\src\itinerarios.cpp
+	"itinerarios.h"
+	<cstring>
+	<conio.h>
+	<autobuses.h>
+
+1588675681 c:\users\albam\desktop\gruncrow\uhu\ed\practicas\practica 1 - modificacion\include\itinerarios.h
+	<fstream>
+	<iostream>
+
+1588677114 source:c:\users\albam\desktop\gruncrow\uhu\ed\practicas\practica 1 - modificacion\main.cpp
+	<iostream>
+	<windows.h>
+	<fstream>
+	<autobuses.h>
+	<itinerarios.h>
+	<conio.h>
+	<cstdlib>
+

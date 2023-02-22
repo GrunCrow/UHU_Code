@@ -1,0 +1,145 @@
+# depslib dependency file v1.0
+1583842439 source:c:\users\usuario\desktop\po\main.cpp
+	<iostream>
+	<conio.h>
+	<fstream>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<quebrado.h>
+	<complejo.h>
+	<matriz.h>
+
+1583841978 c:\users\usuario\desktop\po\include\quebrado.h
+
+1583842070 source:c:\users\usuario\desktop\po\src\quebrado.cpp
+	"quebrado.h"
+	<iostream>
+	<conio.h>
+	<fstream>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<quebrado.h>
+
+1583842219 source:c:\users\usuario\desktop\po\src\complejo.cpp
+	"complejo.h"
+	<iostream>
+	<conio.h>
+	<fstream>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<quebrado.h>
+
+1583842315 c:\users\usuario\desktop\po\include\complejo.h
+
+1583842347 source:c:\users\usuario\desktop\po\src\matriz.cpp
+	"matriz.h"
+	<iostream>
+	<conio.h>
+	<fstream>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1583842425 c:\users\usuario\desktop\po\include\matriz.h
+	"quebrado.h"
+	"complejo.h"
+
+1583842839 source:c:\users\albam\google drive\estudios\universidad\1º curso\2º cuatrimestre\estructura de datos\prácticas\alba\po\main.cpp
+	<iostream>
+	<conio.h>
+	<fstream>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<quebrado.h>
+	<complejo.h>
+	<matriz.h>
+
+1583842841 c:\users\albam\google drive\estudios\universidad\1º curso\2º cuatrimestre\estructura de datos\prácticas\alba\po\include\quebrado.h
+
+1583842840 c:\users\albam\google drive\estudios\universidad\1º curso\2º cuatrimestre\estructura de datos\prácticas\alba\po\include\complejo.h
+
+1583842841 c:\users\albam\google drive\estudios\universidad\1º curso\2º cuatrimestre\estructura de datos\prácticas\alba\po\include\matriz.h
+	"quebrado.h"
+	"complejo.h"
+
+1583842844 source:c:\users\albam\google drive\estudios\universidad\1º curso\2º cuatrimestre\estructura de datos\prácticas\alba\po\src\complejo.cpp
+	"complejo.h"
+	<iostream>
+	<conio.h>
+	<fstream>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<quebrado.h>
+
+1583842844 source:c:\users\albam\google drive\estudios\universidad\1º curso\2º cuatrimestre\estructura de datos\prácticas\alba\po\src\matriz.cpp
+	"matriz.h"
+	<iostream>
+	<conio.h>
+	<fstream>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1583842845 source:c:\users\albam\google drive\estudios\universidad\1º curso\2º cuatrimestre\estructura de datos\prácticas\alba\po\src\quebrado.cpp
+	"quebrado.h"
+	<iostream>
+	<conio.h>
+	<fstream>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<quebrado.h>
+
+1583842839 source:c:\users\albam\onedrive - universidad de huelva\universidad\1º curso\2º cuatrimestre\estructura de datos\prácticas\alba\po\main.cpp
+	<iostream>
+	<conio.h>
+	<fstream>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<quebrado.h>
+	<complejo.h>
+	<matriz.h>
+
+1583842841 c:\users\albam\onedrive - universidad de huelva\universidad\1º curso\2º cuatrimestre\estructura de datos\prácticas\alba\po\include\quebrado.h
+
+1583842840 c:\users\albam\onedrive - universidad de huelva\universidad\1º curso\2º cuatrimestre\estructura de datos\prácticas\alba\po\include\complejo.h
+
+1583842841 c:\users\albam\onedrive - universidad de huelva\universidad\1º curso\2º cuatrimestre\estructura de datos\prácticas\alba\po\include\matriz.h
+	"quebrado.h"
+	"complejo.h"
+
+1583842844 source:c:\users\albam\onedrive - universidad de huelva\universidad\1º curso\2º cuatrimestre\estructura de datos\prácticas\alba\po\src\complejo.cpp
+	"complejo.h"
+	<iostream>
+	<conio.h>
+	<fstream>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<quebrado.h>
+
+1583842844 source:c:\users\albam\onedrive - universidad de huelva\universidad\1º curso\2º cuatrimestre\estructura de datos\prácticas\alba\po\src\matriz.cpp
+	"matriz.h"
+	<iostream>
+	<conio.h>
+	<fstream>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1583842845 source:c:\users\albam\onedrive - universidad de huelva\universidad\1º curso\2º cuatrimestre\estructura de datos\prácticas\alba\po\src\quebrado.cpp
+	"quebrado.h"
+	<iostream>
+	<conio.h>
+	<fstream>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<quebrado.h>
+

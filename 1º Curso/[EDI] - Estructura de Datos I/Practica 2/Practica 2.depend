@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1589289999 source:c:\users\albam\desktop\gruncrow\uhu\ed\practicas\practica 2\main.cpp
+	<iostream>
+	<fstream>
+	<conio.h>
+	<windows.h>
+	"TADColaPri.h"
+	"tadcola.h"
+
+1588619124 source:c:\users\albam\desktop\gruncrow\uhu\ed\practicas\practica 2\src\tadcola.cpp
+	"tadcola.h"
+
+1588075712 c:\users\albam\desktop\gruncrow\uhu\ed\practicas\practica 2\include\tadcola.h
+	<iostream>
+
+1589290939 source:c:\users\albam\desktop\gruncrow\uhu\ed\practicas\practica 2\src\tadcolapri.cpp
+	"TADColaPri.h"
+	"fstream"
+
+1588075335 c:\users\albam\desktop\gruncrow\uhu\ed\practicas\practica 2\include\tadcolapri.h
+	"tadcola.h"
+

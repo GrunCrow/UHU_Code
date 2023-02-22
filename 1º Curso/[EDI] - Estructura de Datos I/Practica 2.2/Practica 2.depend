@@ -1,0 +1,63 @@
+# depslib dependency file v1.0
+1589289999 source:c:\users\albam\desktop\gruncrow\uhu\ed\practicas\practica 2\main.cpp
+	<iostream>
+	<fstream>
+	<conio.h>
+	<windows.h>
+	"TADColaPri.h"
+	"tadcola.h"
+
+1588619124 source:c:\users\albam\desktop\gruncrow\uhu\ed\practicas\practica 2\src\tadcola.cpp
+	"tadcola.h"
+
+1588075712 c:\users\albam\desktop\gruncrow\uhu\ed\practicas\practica 2\include\tadcola.h
+	<iostream>
+
+1589290939 source:c:\users\albam\desktop\gruncrow\uhu\ed\practicas\practica 2\src\tadcolapri.cpp
+	"TADColaPri.h"
+	"fstream"
+
+1588075335 c:\users\albam\desktop\gruncrow\uhu\ed\practicas\practica 2\include\tadcolapri.h
+	"tadcola.h"
+
+1590830976 source:c:\users\albam\desktop\gruncrow\uhu\ed\practicas\practica 2.2\src\tadcola.cpp
+	"tadcola.h"
+
+1589885699 c:\users\albam\desktop\gruncrow\uhu\ed\practicas\practica 2.2\include\tadcola.h
+	<iostream>
+
+1590830541 source:c:\users\albam\desktop\gruncrow\uhu\ed\practicas\practica 2.2\src\tadcolapri.cpp
+	"TADColaPri.h"
+	"fstream"
+
+1588075335 c:\users\albam\desktop\gruncrow\uhu\ed\practicas\practica 2.2\include\tadcolapri.h
+	"tadcola.h"
+
+1591620628 source:c:\users\albam\desktop\gruncrow\uhu\ed\practicas\practica 2.2\main.cpp
+	<iostream>
+	<fstream>
+	<conio.h>
+	<windows.h>
+	"TADColaPri.h"
+	"tadcola.h"
+	"time.h"
+	"TNodo_ListaD.h"
+	"TNodo_ListaC.h"
+
+1590959777 source:c:\users\albam\desktop\gruncrow\uhu\ed\practicas\practica 2.2\src\tnodo_listac.cpp
+	"TNodo_ListaC.h"
+	"string.h"
+
+1590958695 c:\users\albam\desktop\gruncrow\uhu\ed\practicas\practica 2.2\include\tnodo_listac.h
+	"TADColaPri.h"
+	"tadcola.h"
+
+1590959777 source:c:\users\albam\desktop\gruncrow\uhu\ed\practicas\practica 2.2\src\tnodo_listad.cpp
+	"TNodo_ListaD.h"
+	"string.h"
+
+1590958688 c:\users\albam\desktop\gruncrow\uhu\ed\practicas\practica 2.2\include\tnodo_listad.h
+	"TADColaPri.h"
+	"tadcola.h"
+	<iostream>
+
