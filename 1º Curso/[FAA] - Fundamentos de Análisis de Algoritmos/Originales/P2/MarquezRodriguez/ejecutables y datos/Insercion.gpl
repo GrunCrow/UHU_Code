@@ -1,0 +1,13 @@
+#ESTE ES UN SCRIPT DE GNUPLOT PARA ESTUDIO DE 1 METODO
+set title "Insercion"
+set key top left vertical inside
+set grid
+set xlabel "Talla (n)"
+set ylabel "Tiempo (ms)"
+N(x) = a*x*x + b*x+c
+fit N(x) "Insercion.dat" using 1:2 via a,b,c
+plot "Insercion.dat" using 1:2  title "Insercion", N(x)
+set terminal pdf
+set output "Insercion.pdf"
+replot
+pause 5 "Pulsa Enter para continuar..."

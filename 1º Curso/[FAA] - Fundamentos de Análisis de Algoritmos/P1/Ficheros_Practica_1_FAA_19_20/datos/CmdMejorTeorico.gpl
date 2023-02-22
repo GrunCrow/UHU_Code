@@ -1,0 +1,14 @@
+# ESTE ES UN SCRIPT DE GNUPLOT PARA ESTUDIO DEL CASO MEJOR
+set title " SecuencialMejorTeorico"
+set key top left vertical inside
+set grid
+set xlabel "Talla (n)"
+set ylabel "Tiempo (ms)"
+plot "SecuencialMejorTeorico.dat" using 1:2
+C(x) = a
+fit C(x) "SecuencialMejorTeorico.dat" using 1:2 via a
+plot "SecuencialMejorTeorico.dat" using 1:2  title "SecuencialMejorTeorico",C(x)
+set terminal pdf
+set output "SecuencialMejorTeorico.pdf"
+replot
+pause 5 "Pulsa Enter para continuar..."

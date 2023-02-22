@@ -1,0 +1,56 @@
+# depslib dependency file v1.0
+1590401566 source:c:\users\albam\desktop\gruncrow\uhu\faa\prácticas\p2\marquezrodriguez\fuentes\algoritmosordenacion.cpp
+	"AlgoritmosOrdenacion.h"
+
+1590401344 c:\users\albam\desktop\gruncrow\uhu\faa\prácticas\p2\marquezrodriguez\fuentes\algoritmosordenacion.h
+
+1587983396 source:c:\users\albam\desktop\gruncrow\uhu\faa\prácticas\p2\marquezrodriguez\fuentes\conjuntoint.cpp
+	<iostream>
+	<cstdlib>
+	"ConjuntoInt.h"
+
+1587982556 c:\users\albam\desktop\gruncrow\uhu\faa\prácticas\p2\marquezrodriguez\fuentes\conjuntoint.h
+	<iostream>
+
+1590402659 source:c:\users\albam\desktop\gruncrow\uhu\faa\prácticas\p2\marquezrodriguez\fuentes\graficas.cpp
+	"Graficas.h"
+	"Constantes.h"
+	<fstream>
+	<iostream>
+
+1586502865 c:\users\albam\desktop\gruncrow\uhu\faa\prácticas\p2\marquezrodriguez\fuentes\graficas.h
+	<string>
+	<iostream>
+
+1590401671 c:\users\albam\desktop\gruncrow\uhu\faa\prácticas\p2\marquezrodriguez\fuentes\constantes.h
+
+1590402080 source:c:\users\albam\desktop\gruncrow\uhu\faa\prácticas\p2\marquezrodriguez\fuentes\main.cpp
+	<iostream>
+	<conio.h>
+	"TestOrdenacion.h"
+
+1587982532 c:\users\albam\desktop\gruncrow\uhu\faa\prácticas\p2\marquezrodriguez\fuentes\testordenacion.h
+	<vector>
+	<string>
+	<iostream>
+
+1586502669 source:c:\users\albam\desktop\gruncrow\uhu\faa\prácticas\p2\marquezrodriguez\fuentes\mtime.cpp
+	"Mtime.h"
+
+1586502654 c:\users\albam\desktop\gruncrow\uhu\faa\prácticas\p2\marquezrodriguez\fuentes\mtime.h
+	<stdio.h>
+	<windows.h>
+
+1590402026 source:c:\users\albam\desktop\gruncrow\uhu\faa\prácticas\p2\marquezrodriguez\fuentes\testordenacion.cpp
+	"AlgoritmosOrdenacion.h"
+	"TestOrdenacion.h"
+	"ConjuntoInt.h"
+	"Graficas.h"
+	"Mtime.h"
+	"Constantes.h"
+	<string>
+	<fstream>
+	<iomanip>
+	<iostream>
+	<conio.h>
+

@@ -1,0 +1,13 @@
+#ESTE ES UN SCRIPT DE GNUPLOT PARA ESTUDIO DE 1 METODO
+set title "BinariaIt"
+set key top left vertical inside
+set grid
+set xlabel "Talla (n)"
+set ylabel "Tiempo (ms)"
+N(x) = a*log(x)/log(2)
+fit N(x) "BinariaIt.dat" using 1:2 via a
+plot "BinariaIt.dat" using 1:2  title "BinariaIt", N(x)
+set terminal pdf
+set output "BinariaIt.pdf"
+replot
+pause 5 "Pulsa Enter para continuar..."

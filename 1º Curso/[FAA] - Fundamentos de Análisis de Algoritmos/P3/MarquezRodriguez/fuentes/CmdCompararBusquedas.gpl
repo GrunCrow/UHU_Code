@@ -1,0 +1,13 @@
+#ESTE ES UN SCRIPT DE GNUPLOT PARA COMPARACION DE TODOS LOS METODOS
+set title "Comparacion tiempos de SecuencialIt, BinariaIt y InterpolacionIt"
+set key top left vertical inside
+set grid
+set xlabel "Talla (n)"
+set ylabel "Tiempo (ms)"
+#set xrange [0:10]
+#set yrange [100:1000]
+plot "SecuencialIt.dat" using 1:2 with lines title "SecuencialIt",                "BinariaIt.dat" using 1:2 with lines title "BinariaIt",                "InterpolacionIt.dat" using 1:2 with lines title "InterpolacionIt" 
+set terminal pdf
+set output "SecuencialItBinariaItInterpolacionIt.pdf"
+replot
+pause 5 "Pulsa Enter para continuar..."

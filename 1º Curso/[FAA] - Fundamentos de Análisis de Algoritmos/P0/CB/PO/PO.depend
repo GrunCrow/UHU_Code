@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1583753508 source:c:\users\usuario\desktop\p0\cb\po\main.cpp
+	<iostream>
+	"conjuntoInt.h"
+	<stdlib.h>
+
+1583755157 source:c:\users\usuario\desktop\p0\cb\po\src\conjuntoint.cpp
+	<iostream>
+	"conjuntoInt.h"
+
+1583755157 c:\users\usuario\desktop\p0\cb\po\include\conjuntoint.h
+
+1583753490 source:c:\users\usuario\desktop\p0\cb\po\ejemploconjunto.cpp
+	<iostream>
+	"conjuntoInt.h"
+	<stdlib.h>
+

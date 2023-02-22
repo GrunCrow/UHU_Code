@@ -1,0 +1,38 @@
+
+
+*******************************************************************************
+Wed May 13 11:59:59 2020
+
+
+FIT:    data read from "Insercion.dat" using 1:2
+        format = x:z
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: N(x)
+	N(x) = a*x*x + b*x+c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c            
+   0 2.5393552672e+12   0.00e+00  2.91e+05    1.000000e+00   1.000000e+00   1.000000e+00
+   9 1.7311221797e-02  -5.17e-02  2.91e-04    1.094452e-06   1.152075e-04   5.721768e-03
+
+After 9 iterations the fit converged.
+final sum of squares of residuals : 0.0173112
+rel. change during last iteration : -5.16839e-07
+
+degrees of freedom    (FIT_NDF)                        : 7
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0497296
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00247303
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 1.09445e-06      +/- 2.164e-07    (19.77%)
+b               = 0.000115207      +/- 0.0002443    (212%)
+c               = 0.00572177       +/- 0.05849      (1022%)
+
+correlation matrix of the fit parameters:
+                a      b      c      
+a               1.000 
+b              -0.975  1.000 
+c               0.814 -0.909  1.000 

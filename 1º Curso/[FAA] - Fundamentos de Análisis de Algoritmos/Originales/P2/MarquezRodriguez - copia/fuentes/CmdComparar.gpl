@@ -1,0 +1,13 @@
+#ESTE ES UN SCRIPT DE GNUPLOT PARA COMPARACION DE 2 METODOS
+set title "Comparacion tiempos de Burbuja y Seleccion"
+set key top left vertical inside
+set grid
+set xlabel "Talla (n)"
+set ylabel "Tiempo (ms)"
+#set xrange [0:10]
+#set yrange [100:1000]
+plot "Burbuja.dat" using 1:2 with lines title "Burbuja",    "Seleccion.dat" using 1:2 with lines title "Seleccion" 
+set terminal pdf
+set output "BurbujaSeleccion.pdf"
+replot
+pause 5 "Pulsa Enter para continuar..."

@@ -1,0 +1,13 @@
+#ESTE ES UN SCRIPT DE GNUPLOT PARA ESTUDIO DE 1 METODO
+set title "SecuencialMedioTeorico"
+set key top left vertical inside
+set grid
+set xlabel "Talla (n)"
+set ylabel "Tiempo (ms)"
+N(x) = a*x + b
+fit N(x) "SecuencialMedioTeorico.dat" using 1:2 via a,b
+plot "SecuencialMedioTeorico.dat" using 1:2  title "SecuencialMedioTeorico", N(x)
+set terminal pdf
+set output "SecuencialMedioTeorico.pdf"
+replot
+pause 5 "Pulsa Enter para continuar..."

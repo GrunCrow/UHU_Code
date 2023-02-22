@@ -1,0 +1,26 @@
+#ifndef _LIB_CONJUNTOINT
+#define _LIB_CONJUNTOINT
+
+#include <iostream>
+using namespace std;
+
+/////////// Declaración de la clase conjuntoInt /////////////
+
+class ConjuntoInt
+{
+private:
+	int tamano;
+	int *datos;
+public:
+	ConjuntoInt (int max= 0);
+	void copiarDatos (int max,int *d);
+	~ConjuntoInt ();
+	void vaciar ();
+	void GeneraVector (int tam);
+	int* getDatos();
+	void escribe ();
+	int generaKey();
+};
+
+#endif
+

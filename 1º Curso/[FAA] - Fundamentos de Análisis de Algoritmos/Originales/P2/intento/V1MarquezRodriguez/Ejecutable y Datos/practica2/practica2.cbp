@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="practica2" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/practica2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/practica2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="../../Fuentes/AlgoritmosOrdenacion.cpp" />
+		<Unit filename="../../Fuentes/AlgoritmosOrdenacion.h" />
+		<Unit filename="../../Fuentes/ConjuntoInt.cpp" />
+		<Unit filename="../../Fuentes/ConjuntoInt.h" />
+		<Unit filename="../../Fuentes/Constantes.h" />
+		<Unit filename="../../Fuentes/Graficas.cpp" />
+		<Unit filename="../../Fuentes/Graficas.h" />
+		<Unit filename="../../Fuentes/Mtime.cpp" />
+		<Unit filename="../../Fuentes/Mtime.h" />
+		<Unit filename="../../Fuentes/TestOrdenacion.cpp" />
+		<Unit filename="../../Fuentes/TestOrdenacion.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

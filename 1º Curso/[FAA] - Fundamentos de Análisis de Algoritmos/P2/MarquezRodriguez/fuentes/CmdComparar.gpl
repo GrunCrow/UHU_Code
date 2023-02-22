@@ -1,0 +1,13 @@
+#ESTE ES UN SCRIPT DE GNUPLOT PARA COMPARACION DE 2 METODOS
+set title "Comparacion tiempos de Seleccion y QuickSort"
+set key top left vertical inside
+set grid
+set xlabel "Talla (n)"
+set ylabel "Tiempo (ms)"
+#set xrange [0:10]
+#set yrange [100:1000]
+plot "Seleccion.dat" using 1:2 with lines title "Seleccion",    "QuickSort.dat" using 1:2 with lines title "QuickSort" 
+set terminal pdf
+set output "SeleccionQuickSort.pdf"
+replot
+pause 5 "Pulsa Enter para continuar..."

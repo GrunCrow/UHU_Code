@@ -1,0 +1,108 @@
+
+
+*******************************************************************************
+Sun Apr 12 17:29:44 2020
+
+
+FIT:    data read from "SecuencialPeorTeorico.dat" using 1:2
+        format = x:z
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: N(x)
+	N(x) = a*x + b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.3912864000e+08   0.00e+00  4.39e+02    1.000000e+00   1.000000e+00
+   9 1.2924697071e-26   0.00e+00  4.39e-07    7.000000e+00   9.000000e+00
+
+After 9 iterations the fit converged.
+final sum of squares of residuals : 1.29247e-26
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 4.01944e-14
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.61559e-27
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 7                +/- 4.425e-17    (6.322e-16%)
+b               = 9                +/- 2.746e-14    (3.051e-13%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.886  1.000 
+
+
+*******************************************************************************
+Mon Apr 13 13:24:34 2020
+
+
+FIT:    data read from "SecuencialMedioEmpirico.dat" using 1:2
+        format = x:z
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: N(x)
+	N(x) = a*x + b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 3.8610099899e+06   0.00e+00  4.39e+02    1.000000e+00   1.000000e+00
+   8 5.0111126827e-14  -1.26e-11  4.39e-06    1.184681e-09   9.026787e-08
+
+After 8 iterations the fit converged.
+final sum of squares of residuals : 5.01111e-14
+rel. change during last iteration : -1.25938e-16
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.91447e-08
+variance of residuals (reduced chisquare) = WSSR/ndf   : 6.26389e-15
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 1.18468e-09      +/- 8.714e-11    (7.355%)
+b               = 9.02679e-08      +/- 5.407e-08    (59.9%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.886  1.000 
+
+
+*******************************************************************************
+Wed May 13 12:05:46 2020
+
+
+FIT:    data read from "SecuencialPeorTeorico.dat" using 1:2
+        format = x:z
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: N(x)
+	N(x) = a*x + b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.3912864000e+08   0.00e+00  4.39e+02    1.000000e+00   1.000000e+00
+   9 1.2924697071e-26   0.00e+00  4.39e-07    7.000000e+00   9.000000e+00
+
+After 9 iterations the fit converged.
+final sum of squares of residuals : 1.29247e-26
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 4.01944e-14
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.61559e-27
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 7                +/- 4.425e-17    (6.322e-16%)
+b               = 9                +/- 2.746e-14    (3.051e-13%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.886  1.000 

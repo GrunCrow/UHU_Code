@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1584528643 source:c:\users\albam\desktop\gruncrow\uhu\faa\prácticas\p1\marquezrodriguez\fuentes\conjuntoint.cpp
+	<iostream>
+	<ctime>
+	<cstdlib>
+	"ConjuntoInt.h"
+
+1584528643 c:\users\albam\desktop\gruncrow\uhu\faa\prácticas\p1\marquezrodriguez\fuentes\conjuntoint.h
+	<iostream>
+
+1584528722 source:c:\users\albam\desktop\gruncrow\uhu\faa\prácticas\p1\marquezrodriguez\fuentes\mtime.cpp
+	"Mtime.h"
+
+1585571447 c:\users\albam\desktop\gruncrow\uhu\faa\prácticas\p1\marquezrodriguez\fuentes\mtime.h
+	<stdio.h>
+	<windows.h>
+
+1586170173 source:c:\users\albam\desktop\gruncrow\uhu\faa\prácticas\p1\marquezrodriguez\fuentes\testalgoritmo.cpp
+	"TestAlgoritmo.h"
+	"Constantes.h"
+	"ConjuntoInt.h"
+	"Mtime.h"
+	<string>
+	<fstream>
+	<iomanip>
+	<iostream>
+	<conio.h>
+
+1584528688 c:\users\albam\desktop\gruncrow\uhu\faa\prácticas\p1\marquezrodriguez\fuentes\testalgoritmo.h
+	<string>
+	<vector>
+	<iostream>
+
+1584528807 c:\users\albam\desktop\gruncrow\uhu\faa\prácticas\p1\marquezrodriguez\fuentes\constantes.h
+
+1590400609 source:c:\users\albam\desktop\gruncrow\uhu\faa\prácticas\p1\marquezrodriguez\fuentes\main.cpp
+	<iostream>
+	<conio.h>
+	"TestAlgoritmo.h"
+	"Constantes.h"
+

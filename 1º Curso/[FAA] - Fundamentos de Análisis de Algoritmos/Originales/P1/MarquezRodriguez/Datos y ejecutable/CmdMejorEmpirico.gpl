@@ -1,0 +1,14 @@
+# ESTE ES UN SCRIPT DE GNUPLOT PARA ESTUDIO DEL CASO MEJOR
+set title " SecuencialMejorEmpirico"
+set key top left vertical inside
+set grid
+set xlabel "Talla (n)"
+set ylabel "Tiempo (ms)"
+plot "SecuencialMejorEmpirico.dat" using 1:2
+C(x) = a
+fit C(x) "SecuencialMejorEmpirico.dat" using 1:2 via a
+plot "SecuencialMejorEmpirico.dat" using 1:2  title "SecuencialMejorEmpirico",C(x)
+set terminal pdf
+set output "SecuencialMejorEmpirico.pdf"
+replot
+pause 5 "Pulsa Enter para continuar..."

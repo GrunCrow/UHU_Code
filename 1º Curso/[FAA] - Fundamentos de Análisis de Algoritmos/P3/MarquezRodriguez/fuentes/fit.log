@@ -1,0 +1,30 @@
+
+
+*******************************************************************************
+Mon May 25 12:26:18 2020
+
+
+FIT:    data read from "BinariaIt.dat" using 1:2
+        format = x:z
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: N(x)
+	N(x) = a*log(x)/log(2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a            
+   0 7.8845794002e+02   0.00e+00  8.88e+00    1.000000e+00
+   4 1.0876778501e-08  -5.98e-03  8.88e-04    3.425689e-05
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 1.08768e-08
+rel. change during last iteration : -5.97883e-08
+
+degrees of freedom    (FIT_NDF)                        : 9
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.47639e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.20853e-09
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 3.42569e-05      +/- 1.238e-06    (3.614%)

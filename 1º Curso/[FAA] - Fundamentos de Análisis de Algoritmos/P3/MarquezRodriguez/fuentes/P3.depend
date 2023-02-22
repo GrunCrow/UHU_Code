@@ -1,0 +1,83 @@
+# depslib dependency file v1.0
+1589471621 source:c:\users\albam\desktop\gruncrow\uhu\faa\prácticas\p3\marquezrodriguez\fuentes\algoritmosbusqueda.cpp
+	"AlgoritmosBusqueda.h"
+
+1588588108 c:\users\albam\desktop\gruncrow\uhu\faa\prácticas\p3\marquezrodriguez\fuentes\algoritmosbusqueda.h
+
+1587375899 source:c:\users\albam\desktop\gruncrow\uhu\faa\prácticas\p3\marquezrodriguez\fuentes\algoritmosordenacion.cpp
+	"AlgoritmosOrdenacion.h"
+
+1586507455 c:\users\albam\desktop\gruncrow\uhu\faa\prácticas\p3\marquezrodriguez\fuentes\algoritmosordenacion.h
+
+1589470771 source:c:\users\albam\desktop\gruncrow\uhu\faa\prácticas\p3\marquezrodriguez\fuentes\conjuntoint.cpp
+	<iostream>
+	<cstdlib>
+	"ConjuntoInt.h"
+
+1589470771 c:\users\albam\desktop\gruncrow\uhu\faa\prácticas\p3\marquezrodriguez\fuentes\conjuntoint.h
+	<iostream>
+
+1590151523 source:c:\users\albam\desktop\gruncrow\uhu\faa\prácticas\p3\marquezrodriguez\fuentes\graficas.cpp
+	"Graficas.h"
+	"Constantes.h"
+	<fstream>
+	<iostream>
+
+1589478981 c:\users\albam\desktop\gruncrow\uhu\faa\prácticas\p3\marquezrodriguez\fuentes\graficas.h
+	<string>
+	<iostream>
+
+1590151523 c:\users\albam\desktop\gruncrow\uhu\faa\prácticas\p3\marquezrodriguez\fuentes\constantes.h
+
+1589479512 source:c:\users\albam\desktop\gruncrow\uhu\faa\prácticas\p3\marquezrodriguez\fuentes\main.cpp
+	<iostream>
+	<conio.h>
+	"TestOrdenacion.h"
+	"TestBusqueda.h"
+	"Constantes.h"
+
+1587986132 c:\users\albam\desktop\gruncrow\uhu\faa\prácticas\p3\marquezrodriguez\fuentes\testordenacion.h
+	<vector>
+	<string>
+	<iostream>
+
+1589478956 c:\users\albam\desktop\gruncrow\uhu\faa\prácticas\p3\marquezrodriguez\fuentes\testbusqueda.h
+	<vector>
+	<string>
+	<iostream>
+
+1586506269 source:c:\users\albam\desktop\gruncrow\uhu\faa\prácticas\p3\marquezrodriguez\fuentes\mtime.cpp
+	"Mtime.h"
+
+1586506254 c:\users\albam\desktop\gruncrow\uhu\faa\prácticas\p3\marquezrodriguez\fuentes\mtime.h
+	<stdio.h>
+	<windows.h>
+
+1590151523 source:c:\users\albam\desktop\gruncrow\uhu\faa\prácticas\p3\marquezrodriguez\fuentes\testbusqueda.cpp
+	"TestBusqueda.h"
+	"Constantes.h"
+	"AlgoritmosBusqueda.h"
+	"TestBusqueda.h"
+	"TestOrdenacion.h"
+	"ConjuntoInt.h"
+	"Graficas.h"
+	"Mtime.h"
+	<string>
+	<fstream>
+	<iomanip>
+	<iostream>
+	<conio.h>
+
+1588080999 source:c:\users\albam\desktop\gruncrow\uhu\faa\prácticas\p3\marquezrodriguez\fuentes\testordenacion.cpp
+	"AlgoritmosOrdenacion.h"
+	"TestOrdenacion.h"
+	"ConjuntoInt.h"
+	"Graficas.h"
+	"Mtime.h"
+	"Constantes.h"
+	<string>
+	<fstream>
+	<iomanip>
+	<iostream>
+	<conio.h>
+
