@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1616057854 source:c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\2º cuatrimestre\estructura de datos ii\prácticas\práctica 1\persona\main.cpp
+	<iostream>
+	"Persona.h"
+
+1616057403 source:c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\2º cuatrimestre\estructura de datos ii\prácticas\práctica 1\persona\src\persona.cpp
+	"Persona.h"
+
+1616057371 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\2º cuatrimestre\estructura de datos ii\prácticas\práctica 1\persona\include\persona.h
+	<iostream>
+	<string>
+	"MultiConjunto.h"
+
+1616056862 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\2º cuatrimestre\estructura de datos ii\prácticas\práctica 1\persona\include\multiconjunto.h
+

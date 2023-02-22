@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1623254424 source:c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\2º cuatrimestre\estructura de datos ii\prácticas\práctica 4\practica 4\practica4.cpp
+	<iostream>
+	<cstdlib>
+	"grafo.h"
+	"conjunto.h"
+	<queue>
+	<sstream>
+	<map>
+	<stdlib.h>
+
+1367492406 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\2º cuatrimestre\estructura de datos ii\prácticas\práctica 4\practica 4\grafo.h
+	"vertice.h"
+	"arista.h"
+	"conjunto.h"
+	"excep_grafo.h"
+	<map>
+
+1367225538 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\2º cuatrimestre\estructura de datos ii\prácticas\práctica 4\practica 4\vertice.h
+
+1367492398 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\2º cuatrimestre\estructura de datos ii\prácticas\práctica 4\practica 4\arista.h
+	"vertice.h"
+
+1622704428 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\2º cuatrimestre\estructura de datos ii\prácticas\práctica 4\practica 4\conjunto.h
+	"excep_conjunto.h"
+
+1367307162 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\2º cuatrimestre\estructura de datos ii\prácticas\práctica 4\practica 4\excep_conjunto.h
+	"excepcion.h"
+
+1331037254 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\2º cuatrimestre\estructura de datos ii\prácticas\práctica 4\practica 4\excepcion.h
+	<string>
+	<stdexcept>
+
+1367485698 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\2º cuatrimestre\estructura de datos ii\prácticas\práctica 4\practica 4\excep_grafo.h
+	"excepcion.h"
+

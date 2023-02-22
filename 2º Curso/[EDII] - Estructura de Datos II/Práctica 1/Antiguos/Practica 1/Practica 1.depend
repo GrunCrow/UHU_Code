@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1615457932 source:c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\2º cuatrimestre\estructura de datos ii\prácticas\práctica 1\practica 1\main.cpp
+	<iostream>
+	<MultiConjunto.h>
+
+1615458148 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\2º cuatrimestre\estructura de datos ii\prácticas\práctica 1\practica 1\include\multiconjunto.h
+
+1615458148 source:c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\2º cuatrimestre\estructura de datos ii\prácticas\práctica 1\practica 1\src\multiconjunto.cpp
+	"MultiConjunto.h"
+

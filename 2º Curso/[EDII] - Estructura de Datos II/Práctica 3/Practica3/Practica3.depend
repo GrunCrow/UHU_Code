@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1620289596 source:c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\2º cuatrimestre\estructura de datos ii\prácticas\práctica 3\practica3\cartelera.cpp
+	"cartelera.h"
+	<iostream>
+
+1620286639 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\2º cuatrimestre\estructura de datos ii\prácticas\práctica 3\practica3\cartelera.h
+	<map>
+	<utility>
+	<string>
+
+1620284991 source:c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\2º cuatrimestre\estructura de datos ii\prácticas\práctica 3\practica3\usuariop3.cpp
+	<cstdlib>
+	<iostream>
+	"cartelera.h"
+

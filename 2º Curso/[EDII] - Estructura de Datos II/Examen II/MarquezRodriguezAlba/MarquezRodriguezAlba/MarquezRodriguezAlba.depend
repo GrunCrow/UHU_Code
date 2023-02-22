@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1623309716 source:c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\2º cuatrimestre\estructura de datos ii\prácticas\examen ii\marquezrodriguezalba\marquezrodriguezalba\marquezrodriguezalba.cpp
+	<iostream>
+	<cstdlib>
+	"grafo.h"
+	"conjunto.h"
+	<map>
+
+1367492406 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\2º cuatrimestre\estructura de datos ii\prácticas\examen ii\marquezrodriguezalba\marquezrodriguezalba\grafo.h
+	"vertice.h"
+	"arista.h"
+	"conjunto.h"
+	"excep_grafo.h"
+	<map>
+
+1367225538 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\2º cuatrimestre\estructura de datos ii\prácticas\examen ii\marquezrodriguezalba\marquezrodriguezalba\vertice.h
+
+1367492398 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\2º cuatrimestre\estructura de datos ii\prácticas\examen ii\marquezrodriguezalba\marquezrodriguezalba\arista.h
+	"vertice.h"
+
+1367313550 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\2º cuatrimestre\estructura de datos ii\prácticas\examen ii\marquezrodriguezalba\marquezrodriguezalba\conjunto.h
+	"excep_conjunto.h"
+
+1367307162 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\2º cuatrimestre\estructura de datos ii\prácticas\examen ii\marquezrodriguezalba\marquezrodriguezalba\excep_conjunto.h
+	"excepcion.h"
+
+1331037254 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\2º cuatrimestre\estructura de datos ii\prácticas\examen ii\marquezrodriguezalba\marquezrodriguezalba\excepcion.h
+	<string>
+	<stdexcept>
+
+1367485698 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\2º cuatrimestre\estructura de datos ii\prácticas\examen ii\marquezrodriguezalba\marquezrodriguezalba\excep_grafo.h
+	"excepcion.h"
+

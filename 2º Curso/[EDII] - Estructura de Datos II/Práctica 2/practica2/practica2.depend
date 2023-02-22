@@ -1,0 +1,34 @@
+# depslib dependency file v1.0
+1616658549 source:c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\2º cuatrimestre\estructura de datos ii\prácticas\práctica 2\practica2\main.cpp
+
+1363095298 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\2º cuatrimestre\estructura de datos ii\prácticas\práctica 2\practica2\include\arbin.h
+	"nodoB.h"
+	"excep_arbin.h"
+
+1144354256 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\2º cuatrimestre\estructura de datos ii\prácticas\práctica 2\practica2\include\nodob.h
+	<stdlib.h>
+
+1618475109 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\2º cuatrimestre\estructura de datos ii\prácticas\práctica 2\practica2\include\excep_arbin.h
+	"excepcion.h"
+
+1331040854 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\2º cuatrimestre\estructura de datos ii\prácticas\práctica 2\practica2\include\excepcion.h
+	<string>
+	<stdexcept>
+
+1331892404 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\2º cuatrimestre\estructura de datos ii\prácticas\práctica 2\practica2\include\abb.h
+	"nodoB.h"
+	"excep_abb.h"
+	"arbin.h"
+
+1331895784 c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\2º cuatrimestre\estructura de datos ii\prácticas\práctica 2\practica2\include\excep_abb.h
+	"excepcion.h"
+
+1619622039 source:c:\users\albam\onedrive - universidad de huelva\universidad\2º curso\2º cuatrimestre\estructura de datos ii\prácticas\práctica 2\practica2\practica2.cpp
+	<iostream>
+	<cstdlib>
+	<queue>
+	<cmath>
+	<cstring>
+	"arbin.h"
+	"abb.h"
+

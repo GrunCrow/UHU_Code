@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "1fe6fe3c-e45c-4032-99b4-eadfac3537e9": {
+      "ProjectGuid": "1fe6fe3c-e45c-4032-99b4-eadfac3537e9",
+      "DisplayName": "BinTree",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
