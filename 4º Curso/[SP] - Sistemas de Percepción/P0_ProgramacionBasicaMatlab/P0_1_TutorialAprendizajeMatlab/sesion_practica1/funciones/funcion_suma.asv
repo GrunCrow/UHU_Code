@@ -1,0 +1,9 @@
+function R = funcion_suma(sumando_1, sumando_2, sumando_3)
+    
+    Af = uint8(sumando_1);
+    Bf = uint8(sumando_1);
+    sumando_1_f = uint8(sumando_1);
+
+    suma = sumando_1 + sumando_2 ;
+
+end
