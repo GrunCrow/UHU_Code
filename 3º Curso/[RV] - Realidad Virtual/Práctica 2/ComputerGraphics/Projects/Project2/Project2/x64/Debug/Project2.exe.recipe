@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\ComputerGraphics\Projects\Project2\x64\Debug\Project2.exe</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles>
+    <ContentFile>
+      <FullPath>C:\ComputerGraphics\Projects\Project2\Project2\FragmentShader.htm</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\ComputerGraphics\Projects\Project2\Project2\VertexShader.htm</FullPath>
+    </ContentFile>
+  </ContentFiles>
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

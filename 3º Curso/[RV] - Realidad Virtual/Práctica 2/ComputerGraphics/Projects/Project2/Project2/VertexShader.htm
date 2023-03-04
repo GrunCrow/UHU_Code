@@ -1,0 +1,14 @@
+#version 400
+
+in vec3 VertexPosition;
+
+uniform float posX;
+uniform float posY;
+uniform float size;
+
+void main()
+{
+  gl_Position = vec4( size*VertexPosition.x + posX
+                    , size*VertexPosition.y + posY
+                    , VertexPosition.z, 1.0);
+}

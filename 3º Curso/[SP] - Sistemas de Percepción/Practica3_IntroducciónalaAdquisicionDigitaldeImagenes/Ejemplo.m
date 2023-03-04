@@ -1,0 +1,322 @@
+clear all
+clc
+
+% Función que devuelve una estructura con información del hardware de adquisición de 
+% imágenes disponible, incluyendo los adaptadores de video instalados
+datos=imaqhwinfo;
+
+%     InstalledAdaptors: {'winvideo'}
+%         MATLABVersion: '9.13 (R2022b)'
+%           ToolboxName: 'Image Acquisition Toolbox'
+%        ToolboxVersion: '6.7 (R2022b)'
+
+
+% Función que devuelve una estructura con información del dispositivo de video instalado
+datos=imaqhwinfo('winvideo');
+
+%        AdaptorDllName: 'C:\ProgramData\MATLAB\SupportPackages\R2022b\toolbox\imaq\supportpackages\genericvideo\adaptor\win64\mwwinvideoimaq.dll'
+%     AdaptorDllVersion: '6.7 (R2022b)'
+%           AdaptorName: 'winvideo'
+%             DeviceIDs: {[1]}
+%            DeviceInfo: [1×1 struct]
+
+datos.DeviceInfo;
+
+%              DefaultFormat: 'MJPG_1280x720'
+%        DeviceFileSupported: 0
+%                 DeviceName: 'HP Wide Vision HD Camera'
+%                   DeviceID: 1
+%      VideoInputConstructor: 'videoinput('winvideo', 1)'
+%     VideoDeviceConstructor: 'imaq.VideoDevice('winvideo', 1)'
+%           SupportedFormats: {1×11 cell}
+
+
+
+datos.DeviceInfo(1).SupportedFormats;
+% Columns 1 through 5
+% 
+%     {'MJPG_1280x720'}    {'MJPG_176x144'}    {'MJPG_320x240'}    {'MJPG_352x288'}    {'MJPG_640x360'}
+% 
+%   Columns 6 through 10
+% 
+%     {'MJPG_640x480'}    {'YUY2_176x144'}    {'YUY2_320x240'}    {'YUY2_352x288'}    {'YUY2_640x360'}
+% 
+%   Column 11
+% 
+%     {'YUY2_640x480'}
+
+
+% dispositivo de adquisición de imágenes (WebCam, cámara...) y con el que Matlab 
+% se comunicará con el dispositivo de adquisición de imágenes (Webcam, cámara,...)
+video=videoinput('winvideo',1,'MJPG_320x240');
+
+% Para acceder a la información de este objeto Matlab:
+get(video)
+
+% General Settings:
+%     DeviceID = 1
+%     DiskLogger = []
+%     DiskLoggerFrameCount = 0
+%     EventLog = [1×0 struct]
+%     FrameGrabInterval = 1
+%     FramesAcquired = 0
+%     FramesAvailable = 0
+%     FramesPerTrigger = 10
+%     Logging = off
+%     LoggingMode = memory
+%     Name = MJPG_320x240-winvideo-1
+%     NumberOfBands = 3
+%     PreviewFullBitDepth = off
+%     Previewing = off
+%     ROIPosition = [0 0 320 240]
+%     Running = off
+%     Tag = 
+%     Timeout = 10
+%     Type = videoinput
+%     UserData = []
+%     VideoFormat = MJPG_320x240
+%     VideoResolution = [320 240]
+% 
+%   Color Space Settings:
+%     BayerSensorAlignment = grbg
+%     ReturnedColorSpace = rgb
+% 
+%   Callback Function Settings:
+%     ErrorFcn = @imaqcallback
+%     FramesAcquiredFcn = []
+%     FramesAcquiredFcnCount = 0
+%     StartFcn = []
+%     StopFcn = []
+%     TimerFcn = []
+%     TimerPeriod = 1
+%     TriggerFcn = []
+% 
+%   Trigger Settings:
+%     InitialTriggerTime = []
+%     TriggerCondition = none
+%     TriggerFrameDelay = 0
+%     TriggerRepeat = 0
+%     TriggersExecuted = 0
+%     TriggerSource = none
+%     TriggerType = immediate
+% 
+%   Acquisition Sources:
+%     SelectedSourceName = input1
+%     Source = [1×1 videosource]
+
+
+% Para ver una pequeña descripción de lo que es cada parámetro:
+% imaqhelp videoinput
+
+% Todos estos parámeros son modificables abriendo el objeto de video. Doble
+% click en el workspace.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+% Para capturar una imagen independiente (no afecta el número de disparos y
+% frames por disparos):
+preview(video)
+
+% se abre una pantalla gráfica que muestra lo que visualiza la cámara
+I = getsnapshot(video);
+
+% captura la imagen que se está visualizando la cámara en el momento de la llamada
+% Antes de capturar hay que previsualizar (si no se captura una imagen en negro)
+imtool(I) % para mostrar la imagen por imtool
+
+% Hay cámaras que no ofrecen modelo RGB de salida, sino que ofrecen modelos
+% de color basados en luminancia y dos componentes cromáticas YCbCr,
+% YUY,...
+video.ReturnedColorSpace
+
+% Hay que aplicar alguna función MATLAB que transforme el modelo de color a RGB
+% Esta función es: ycbcr2rgb.m para modelos YCbCr.
+
+video=videoinput('winvideo',1,'I420_320x240'); %
+preview(video)
+I = getsnapshot(video);
+image(I)
+Imod=ycbcr2rgb(I);
+imshow(Imod)
+
+% Otra opción es editar el objeto video y seleccionar el modelo de color de
+% salida de la imagen - En ReturnedColorSpace
+% De esta forma, se hace la conversión de forma automática, sin necesidad
+% de aplicar ninguna función.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+% VIDEO: Adquisición de imágenes, frames, continuada. Parámetros de interés
+video.TriggerRepeat=3; % set(video,'TriggerRepeat',Inf);
+
+% número de disparos adicionales programados para el dispositivo.
+% si tiene un valor 3, se ejecutan 4 disparos -> 12 frames
+
+% video.TriggerRepeat=inf; % set(video,'TriggerRepeat',Inf); Con esta
+% configuración, infinitos disparos
+video.FramesPerTrigger=3;
+% Número de imágenes o frames que se capturan por disparo
+video.FrameGrabInterval=3;
+
+% Respecto a los frames que la camara puede adquirir a su máxima velocidad
+% de captura (típicamente 30 fps), se almacenan en memoria el primero de cada tres hasta
+% un total de (Número de disparos * Frames por Disparos).
+% Este paramétro es importante porque determina los frames por segundo fps
+% a la que se graba en memoria (para que un video se pueda ver de forma
+% aceptable se deben mostrar al menos 1 fps).
+% Si por ejemplo el dispositivo de video es capaz de capturar 4 fps
+% y se fija el FrameGrabInterval a 2,
+% las imágenenes se han grabado en memoria con una tasa de 2fps.
+
+% LoggingMode = memory;
+% el almacenamiento de los frames es en memoria -también puede ser en disco
+
+% TriggerType = immediate
+% El número de disparos programado es inmediato, uno detrás de otro
+
+% La otra opción es disparar de forma manual, si lo permite el dispositivo.
+
+% Video.FramesAcquired
+% En esta variable se almacena el número de Frames que se han adquirido
+% con getdata. La instrucción getdata permite guardar como variable matlab
+% uno o varios frames guardados en memoria.
+
+
+% Para cambiar estos parámetros, puede hacerse como se ha mostrado o
+% haciendo doble click en el objeto video en el Workspace y modificar las
+% opciones.
+
+% Para comenzar a capturar una secuencia de frames:
+start(video) % el dispositivo de video empieza a funcionar con la
+             % configuración almacenada en el objeto.
+
+% Si el disparo es inmediato y el número de disparos infinito, está
+% continuamente capturando fotos hasta que se llame la función stop(video).
+% No todos los frames se guardan en memoria
+% - sólo los que indica video.FrameGrabInterval
+stop(video) % para detener una adquisición de video
+
+
+
+
+% CREAR UNA SECUENCIA DE 50 FRAMES Y MOSTRARLA:
+% 1 OPCIÓN: CAPTURARLOS Y GUARDARLOS EN MEMORIA TODOS, Y DESPUÉS MOSTRARLOS
+% ESTA OPCIÓN NO SE APLICA PERO ES ILUSTRATIVA DEL FUNCIONAMIENTO
+
+video.TriggerRepeat=1 % dos disparos programados para el dispositivo.
+
+video.FramesPerTrigger=25;
+% Número de imágenes o frames que se capturan por disparo
+
+video.FrameGrabInterval=2;
+
+%  Tardará x en capturar x frames, porque ha hecho 2 disparos a 25 frames
+%  por disparo
+
+% Con esta configuración se graban en memoria uno de cada dos frames
+% que el dispositivo es capaz de capturar a su máxima velocidad.
+% Se reducen los fps guardados en memoria a la mitad.
+% El número de frames capturados siguen siendo 50, pero están más
+% espaciados en el tiempo.
+start(video)
+
+video.FramesAcquired % nos da cuantos frames han sido capturas con los parametros introducidos
+% otra forma de hacerlo:
+
+
+% Cuando termina, se puede ver un reporte con video: se puede comprobar que
+% hay 50 frames disponibles con getdata
+% Para mostrarlos:
+N=((video.TriggerRepeat+1)*video.FramesPerTrigger);
+% N es el número de frames guardados en memoria
+% Accedemos a la memoria para ir cogiendo frames de uno en uno y los vamos
+% mostrando con imshow
+
+figure, hold on
+for i=1:N
+    I=getdata(video,1);
+    imshow(I)
+end
+
+start(video)
+% Accedemos de golpe a toda la información de la memoria y la mostramos
+I=getdata(video,N);
+[Filas Columnas Bandas Imagenes]=size(I);
+
+% Primera imagen: I(:,:,1,1)
+% Última imagen: I(:,:,1,N)
+for i=1:N
+    imagen=I(:,:,1,i);
+    figure,imshow(imagen) % se abren N imágenes pero podemos ver lo grabado
+end
+
+
+
+% SEGUNDA OPCIÓN QUE ES LA QUE SE UTILIZA:
+% Se programan infinitos disparos y el video termina cuando se han
+% adquirido de la memoria un número determinado de frames
+video.TriggerRepeat=inf; % disparos continuados
+video.FramesPerTrigger=1;
+% Número de imágenes o frames que se capturan por disparo
+video.FrameGrabInterval=1; % Hacer para un valor 10 y 20;
+start(video)
+
+while (video.FramesAcquired<50)
+    I=getdata(video,1); % captura un frame guardado en memoria. A medida que se va llamando
+    % a esta función se van capturando los frames en el mismo orden cronológico en que fueron guardados
+
+    % Ver la ayuda de esta función: admite guardar simultánemente un número mayor de frames, en cuyo
+    % caso se almacena en I un vector de frames.
+    imshow(255-I) % para ir mostrando la secuencia de frames - en este caso se muestra la imagen complemtaria
+end
+stop(video)
+
+% Para ver el reporte de los frames que se han capturado con getdata
+% y los que quedan por capturar guardados en memoria:
+video
+
+
+% SELECCIÓN DE video.FrameGrabInterval
+% La función getdata permite guardar información temporal
+% de cuando se han tomado los frames. Esto es importante porque, fijando
+% video.FrameGrabInterval a 1 (es decir se guardan los frames a la máxima
+% velocidad de captura en memoria), permite tener una idea de los fps
+% que nuestro dispositivo de video es capaz de capturar.
+% En base a ello podemos fijar
+% el número de frames por segundo que queremos que
+% se graben en memoria a través del parámetro video.FrameGrabInterval, para
+% que la secuencia de video registrada se visualice con un mínimo de 1fps.
+% Un Ejemplo sería:
+video.FrameGrabInterval=1;
+start(video)
+TIEMPO=[];
+
+while (video.FramesAcquired<100)
+    % Como ahora se graban todos los frames a la velocidad de captura de la
+    
+    % cámara, varios frames por segundo,
+    % para que la secuencia dure un poco más de tiempo hay que programar un
+    % mayor número de frames adquiridos con getdata
+    [I TIME]=getdata(video,1);
+    TIEMPO=[TIEMPO ; TIME];
+    gamma=1.5;
+    I=imadjust(I,[],[],gamma);
+    imshow(I) % para ir mostrando la secuencia de frames - en este caso se muestra una secuencia más "clara"
+end
+stop(video)
+video
+
+% En este ejemplo se ha guardado en la variable TIEMPO los instantes de
+% tiempo, contados desde el primer disparo, en los que se
+% capturan los frames que se graban

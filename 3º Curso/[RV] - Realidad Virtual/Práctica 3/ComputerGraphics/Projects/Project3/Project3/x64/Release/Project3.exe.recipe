@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\ComputerGraphics\Projects\Project3\x64\Release\Project3.exe</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles>
+    <ContentFile>
+      <FullPath>C:\ComputerGraphics\Projects\Project3\Project3\FragmentShader.htm</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\ComputerGraphics\Projects\Project3\Project3\html1.htm</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\ComputerGraphics\Projects\Project3\Project3\VertexShader.htm</FullPath>
+    </ContentFile>
+  </ContentFiles>
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

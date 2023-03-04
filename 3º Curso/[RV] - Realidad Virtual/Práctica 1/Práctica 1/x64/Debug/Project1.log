@@ -1,0 +1,6 @@
+﻿  CGApplication.cpp
+  CGModel.cpp
+  main.cpp
+  Generando código...
+LINK : warning LNK4098: la biblioteca predeterminada'MSVCRT' entra en conflicto con otras bibliotecas; use la biblioteca /NODEFAULTLIB:biblioteca
+  Project1.vcxproj -> C:\ComputerGraphics\Projects\Project1\x64\Debug\Project1.exe

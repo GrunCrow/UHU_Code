@@ -1,0 +1,10 @@
+#version 400
+
+ in vec3 VertexPosition;
+
+ uniform mat4 Transform;
+
+ void main()
+ {
+   gl_Position = Transform * vec4(VertexPosition, 1.0);
+ }

@@ -1,0 +1,16 @@
+﻿  CGApplication.cpp
+  CGCone.cpp
+  CGCube.cpp
+  CGCylinder.cpp
+  CGDisk.cpp
+  CGFigure.cpp
+  CGIcosahedron.cpp
+  CGModel.cpp
+  CGPiramid.cpp
+  CGShaderProgram.cpp
+  CGSphere.cpp
+  CGTorus.cpp
+  main.cpp
+  Generando código...
+LINK : warning LNK4098: la biblioteca predeterminada'MSVCRT' entra en conflicto con otras bibliotecas; use la biblioteca /NODEFAULTLIB:biblioteca
+  Project3.vcxproj -> C:\ComputerGraphics\Projects\Project3\x64\Debug\Project3.exe
