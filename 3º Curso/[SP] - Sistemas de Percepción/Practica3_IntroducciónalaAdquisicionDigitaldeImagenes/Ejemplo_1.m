@@ -7,8 +7,8 @@ clear all
 clc
 
 datos=imaqhwinfo('winvideo');
-video=videoinput('winvideo',1,'YUY2_320x240'); %
-video.ReturnedColorSpace='grayscale';c
+video=videoinput('winvideo',1,'MJPG_320x240'); %
+video.ReturnedColorSpace='grayscale';
 
 % CAPTURAMOS UNA IMAGEN PARA EXTRAER LA PLANTILLA
 preview(video) % se abra una pantalla gráfica que muestra lo que visualiza la cámara (1fps)
