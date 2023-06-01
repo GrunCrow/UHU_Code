@@ -1,1 +1,0 @@
-% Nube de puntos debe estar dentro de la misma region
