@@ -4,10 +4,10 @@ Código de las prácticas y proyectos elaborados durante la realización del Gra
 Para la teoría, resúmenes, actividades de la asignatura... puedes entrar en mi [Wuolah](https://wuolah.com/profile/GrunCrow/uploaded)
 
 Las prácticas aquí subidas corresponden a los siguientes cursos:
-**[1º Curso - Curso 2019/2020](https://github.com/GrunCrow/UHU_Code/tree/main/1º%20Curso)
-[2º Curso - Curso 2020/2021](https://github.com/GrunCrow/UHU_Code/tree/main/2º%20Curso)
-[3º Curso - Curso 2022/2023 (Computación)](https://github.com/GrunCrow/UHU_Code/tree/main/3º%20Curso)
-[4º Curso - Curso 2022/2023 (Computación + Optativas)](https://github.com/GrunCrow/UHU_Code/tree/main/4º%20Curso)**
+- **[1º Curso - Curso 2019/2020](https://github.com/GrunCrow/UHU_Code/tree/main/1º%20Curso)**
+- **[2º Curso - Curso 2020/2021](https://github.com/GrunCrow/UHU_Code/tree/main/2º%20Curso)**
+- **[3º Curso - Curso 2022/2023 (Computación)](https://github.com/GrunCrow/UHU_Code/tree/main/3º%20Curso)**
+- **[4º Curso - Curso 2022/2023 (Computación + Optativas)](https://github.com/GrunCrow/UHU_Code/tree/main/4º%20Curso)**
 
 Durante el curso 2021/2022 realicé un Erasmus en Wroclaw, Polonia en la universidad Politechnika Wroclawska. Si vas de ERASMUS o quieres prácticas de allí estás son las que hice para las siguientes asignaturas:
 - [Data Structures and Algorithms](https://github.com/GrunCrow/Data-Structures-and-Algorithms): Las prácticas son todos los años las mismas. La puedes convalidar por FAA - Fundamentos y Análisis de Algoritmos (1º Curso) o AMC - Algorítmica Y Modelos de Computación (3º Curso).
