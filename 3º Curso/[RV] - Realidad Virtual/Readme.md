@@ -8,6 +8,6 @@ El proyecto realizado tiene un repositorio propio, en el curso 2022/2023 el proy
 
 [Repositorio del proyecto de Realidad Virtual](https://github.com/GrunCrow/Scalextric_OpenGL)
 
-## Exámen (Teoría)
+## Examen (Teoría)
 
 Puedes acceder a un [Resumen con las preguntas que ha preguntado en años anteriores](https://www.wuolah.com/etsi-gii-10564/realidad-virtual/8169211?utm_source=wuolah&utm_medium=referral&utm_campaign=test&utm_content=compartir&utm_term=wuolah-referral-test-compartir&referral=GenWo0)
