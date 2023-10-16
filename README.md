@@ -20,4 +20,8 @@ Si vas de ERASMUS o conoces a alguien que vaya y quiere las prácticas de allí 
   - [AI_Checkers](https://github.com/GrunCrow/AI-checkers): Algoritmo Min-Max
   - [Fuzzy_System_Air_Conditioner](https://github.com/GrunCrow/FuzzyInferenceSystem_AirConditioner)
 
+### TFG
+
+El TFG tiene su propia [carpeta](https://github.com/GrunCrow/UHU_Code/tree/main/TFG) con el enlace que te llevará a su repositorio. En esta carpeta podrás encontrar más información y documentación sobre el TFG.
+
 Si tienes dudas o quieres más información pásate por mis redes sociales que encontrarás en la página de inicio de mi Github y contáctame!
