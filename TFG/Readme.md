@@ -10,5 +10,5 @@ En resumen, este estudio subraya la importancia de contar con un conjunto de dat
 
 ## Repositorio
 
-Para acceder al contenido del código con el que se realizaron las experimentaciones del TFG antes descrito puedes acceder al repositorio [Camera Trap CNN Model](https://github.com/GrunCrow/Camera_Trap_CNN_Model)
+Para acceder al contenido del código con el que se realizaron las experimentaciones del TFG antes descrito puedes acceder al repositorio [Camera Trap CNN Model](https://github.com/GrunCrow/Camera-Trap-CNN-Model)
 
