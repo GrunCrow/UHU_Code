@@ -1,5 +1,14 @@
 # UHU_Code
-Código de las prácticas y proyectos elaborados durante la realización del Grado de Ingeniería Informática en la Universidad de Huelva
+
+Código de las prácticas y proyectos elaborados durante la realización del Grado de Ingeniería Informática en la Universidad de Huelva.
+
+> ⚠️ **Aviso:** Este repositorio **no tiene mantenimiento activo, son las prácticas que entregué en su momento para cada asignatura**. Lo pongo en público y abierto porque creo que el conocimiento es colectivo, pero es muy posible que algunas prácticas o proyectos contengan errores. Si encuentras alguno, me encantaría que me lo comentaras para poder corregirlo y ayudar a otras personas.  
+>
+> Por otro lado, siempre me hace ilusión cuando alguien visita mi repositorio. Siéntete libre de escribirme para cualquier consulta, ya sea sobre la carrera o sobre informática en general. Aunque soy informática, soy simpática :)  
+>
+> La forma más directa de contactarme es por correo electrónico: **ai.gruncrow@gmail.com**.
+
+---
 
 Para la teoría, resúmenes, actividades de la asignatura... puedes entrar en mi [Wuolah](https://wuolah.com/profile/GrunCrow/uploaded)
 
